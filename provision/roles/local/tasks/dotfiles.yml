@@ -1,0 +1,8 @@
+---
+- name: link files and directories
+  file:
+    src: "{{ item.source }}"
+    path: "{{ item.dest }}"
+    state: link
+    force: yes
+  with_items: "{{ links }}"

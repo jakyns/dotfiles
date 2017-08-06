@@ -1,0 +1,69 @@
+---
+brew_taps:
+  - homebrew/versions
+
+brew_packages:
+  - autojump
+  - fish
+
+cask_taps:
+  - caskroom/cask
+  - caskroom/versions
+
+cask_packages:
+  - alfred
+  - appcleaner
+  - atom
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - google-backup-and-sync
+  - iterm2
+  - postico
+  - postman
+  - sequel-pro
+  - sizeup
+  - sourcetree
+  - sublime-text
+  - transmission
+  - vlc
+
+# custom/zsh
+
+zsh_packages:
+  - zsh
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+
+# custom/node
+
+node_packages:
+  - node
+  - nvm
+
+# custom/python
+
+pyenv_packages:
+  - pyenv
+  - pyenv-virtualenvwrapper
+
+python2_version: 2.7.13
+
+python2_packages:
+  - virtualenvwrapper
+
+python3_version: 3.6.1
+
+python3_packages:
+  - ipython
+  - pip
+  - virtualenv
+
+# custom/ruby
+
+ruby_version: 2.3.1
+
+ruby_packages:
+  - bundler
+  - pry

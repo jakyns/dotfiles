@@ -1,0 +1,20 @@
+---
+
+fonts:
+  - fonts/meslo_lg_m_regular_for_powerline.ttf
+
+dots:
+  - ~/.ssh
+
+links:
+  - source: ~/dotfiles/.gitconfig
+    dest: ~/.gitconfig
+
+  - source: ~/dotfiles/.gitignore_global
+    dest: ~/.gitignore_global
+
+  - source: ~/dotfiles/.vimrc
+    dest: ~/.vimrc
+
+  - source: ~/dotfiles/.zshrc
+    dest: ~/.zshrc

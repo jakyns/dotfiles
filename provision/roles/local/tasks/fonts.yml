@@ -1,0 +1,7 @@
+---
+- name: getting fonts
+  copy:
+    src: "{{ item }}"
+    dest: ~/Library/Fonts
+    force: yes
+  with_items: "{{ fonts }}"

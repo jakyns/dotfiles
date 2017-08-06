@@ -1,0 +1,20 @@
+---
+- name: upgrade homebrew packages
+  homebrew: upgrade_all=yes
+
+# custom/python
+
+- name: update default python
+  command: ~/.pyenv/bin/pyenv global {{ python2_version }} {{ python3_version }}
+
+- name: update pyenv shims
+  command: ~/.pyenv/bin/pyenv rehash
+
+# custom/ruby
+
+- name: update default ruby
+  command: ~/.rbenv/bin/rbenv global {{ ruby_version }}
+
+- name: update rbenv shims
+  command: ~/.rbenv/bin/rbenv rehash
+  
