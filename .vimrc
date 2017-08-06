@@ -13,7 +13,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 " Nerdtree
-map <C-n> :NERDTreeToggle<CR>
+map <C-l> :NERDTreeToggle<CR>
 
 set nowrap
 set textwidth=70                    " Margin enforcement
