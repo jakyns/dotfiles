@@ -64,7 +64,7 @@ cask_update() {
 
     while read -ra cask_info; do
         outdated_casks+=(${cask_info[0]})
-    done <<< "$(brew cask outdated --quiet --greedy)"
+    done <<< "$(brew cask outdated --quiet)"
 
     echo -ne "\r\n"
     echo_clear
