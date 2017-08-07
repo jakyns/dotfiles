@@ -5,6 +5,7 @@ brew_taps:
 brew_packages:
   - autojump
   - fish
+  - reattach-to-user-namespace
 
 cask_taps:
   - caskroom/cask
