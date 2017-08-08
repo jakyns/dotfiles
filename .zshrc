@@ -24,3 +24,14 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYENV="true"
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper
 
+# method for watching different file then execute it
+watch () {
+	while true
+	do
+		$@
+		fswatch -1r .
+		clear
+		sleep 1
+	done
+}
+
