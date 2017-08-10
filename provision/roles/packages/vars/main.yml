@@ -47,7 +47,6 @@ node_packages:
 # custom/python
 
 pyenv_packages:
-  - pyenv
   - pyenv-virtualenvwrapper
 
 python2_version: 2.7.13
