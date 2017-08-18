@@ -10,7 +10,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 
