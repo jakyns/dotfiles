@@ -38,6 +38,11 @@ zsh_packages:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
 
+# custom/node
+
+node_packages:
+  - pm2
+
 # custom/python
 
 pyenv_packages:

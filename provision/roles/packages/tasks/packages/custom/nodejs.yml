@@ -2,3 +2,10 @@
 - name: install node
   homebrew: name=node state=latest
 
+- name: install npm packages
+  npm:
+    name: "{{ item }}"
+    global: true
+    state: latest
+  with_items: "{{ node_packages }}"
+
