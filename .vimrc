@@ -25,6 +25,13 @@ set backspace=indent,eol,start      " Backspace over everything
 set number                          " Show lines numbers
 set cul                             " Highlight current line for active window
 
+" Indentation
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+
 syntax on
 filetype on
 filetype indent on
