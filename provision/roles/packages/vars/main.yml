@@ -16,6 +16,7 @@ cask_packages:
   - alfred
   - appcleaner
   - atom
+  - discord
   - docker
   - dropbox
   - firefox
@@ -27,6 +28,7 @@ cask_packages:
   - sequel-pro
   - sizeup
   - sourcetree
+  - spotify
   - sublime-text
   - transmission
   - vlc
