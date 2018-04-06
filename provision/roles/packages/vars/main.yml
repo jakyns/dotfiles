@@ -65,7 +65,7 @@ python3_packages:
 
 # custom/ruby
 
-ruby_version: 2.3.1
+ruby_version: 2.3.5
 
 ruby_packages:
   - bundler
