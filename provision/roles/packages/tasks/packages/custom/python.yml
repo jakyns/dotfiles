@@ -15,30 +15,14 @@
     dest: ~/.pyenv/plugins/pyenv-pip-rehash
     force: yes
 
-- name: install python {{ python2_version }}
-  command: ~/.pyenv/bin/pyenv install {{ python2_version }}
+- name: install python
+  command: ~/.pyenv/bin/pyenv install {{ item }}
   args:
-    creates: ~/.pyenv/versions/{{ python2_version }}
+    creates: ~/.pyenv/versions/{{ item }}
+  with_items: "{{ python_versions }}"
   notify: update default python
 
-- name: install python {{ python2_version }} packages
-  pip:
-    name: "{{ item }}"
-    state: latest
-    executable: ~/.pyenv/versions/{{ python2_version }}/bin/pip
-    chdir: ~/.pyenv/versions/{{ python2_version }}
-  with_items: "{{ python2_packages }}"
-  notify: update pyenv shims
-  environment:
-    PYTHONPATH:
-
-- name: install python {{ python3_version }}
-  command: ~/.pyenv/bin/pyenv install {{ python3_version }}
-  args:
-    creates: ~/.pyenv/versions/{{ python3_version }}
-  notify: update default python
-
-- name: install python {{ python3_version }} packages
+- name: install python packages
   pip:
     name: "{{ item }}"
     state: latest
