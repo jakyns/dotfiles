@@ -1,8 +1,9 @@
 ---
-- name: Clone Vundle
+- name: clone Vundle
   git:
     repo: https://github.com/gmarik/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
+    force: yes
 
-- name: Install/update VIM plugins
+- name: install/update VIM plugins
   command: vim +PluginInstall! +qall
