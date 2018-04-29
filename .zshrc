@@ -24,3 +24,6 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYENV="true"
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper
 
+# golang
+export GOPATH="$HOME/Sites/go"
+export PATH="$PATH:$GOPATH/bin"
