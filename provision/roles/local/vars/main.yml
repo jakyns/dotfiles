@@ -21,3 +21,6 @@ links:
 
   - source: ~/dotfiles/.tmux.conf
     dest: ~/.tmux.conf
+
+  - source: ~/dotfiles/.guard.rb
+    dest: ~/.guard.rb
