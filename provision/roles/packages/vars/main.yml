@@ -4,11 +4,11 @@ brew_taps:
 
 brew_packages:
   - autojump
+  - elixir
   - fish
+  - postgresql
   - reattach-to-user-namespace
   - the_silver_searcher
-  - postgresql
-  - elixir
 
 cask_taps:
   - caskroom/cask
