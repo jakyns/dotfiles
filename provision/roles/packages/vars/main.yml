@@ -46,6 +46,7 @@ zsh_packages:
 
 node_packages:
   - pm2
+  - dockly
 
 # custom/python
 

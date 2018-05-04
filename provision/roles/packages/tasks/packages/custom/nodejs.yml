@@ -5,6 +5,6 @@
 - name: install npm packages
   npm:
     name: "{{ item }}"
-    global: true
     state: latest
+    global: true
   with_items: "{{ node_packages }}"
