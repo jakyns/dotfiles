@@ -6,6 +6,9 @@ brew_packages:
   - autojump
   - elixir
   - fish
+  - kubectl
+  - kubernetes-cli
+  - kubernetes-helm
   - postgresql
   - reattach-to-user-namespace
   - the_silver_searcher
