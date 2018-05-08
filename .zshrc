@@ -27,3 +27,7 @@ pyenv virtualenvwrapper
 # golang
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
+
+# os
+export EDITOR=/usr/bin/vim
+
