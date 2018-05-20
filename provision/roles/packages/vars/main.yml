@@ -55,9 +55,6 @@ node_packages:
 
 # custom/python
 
-pyenv_packages:
-  - pyenv-virtualenvwrapper
-
 python_versions:
   - 2.7.13
   - 3.6.5
@@ -68,7 +65,6 @@ python3_packages:
   - ipython
   - pip
   - virtualenv
-  - virtualenvwrapper
 
 # custom/ruby
 

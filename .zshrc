@@ -20,9 +20,7 @@ eval "$(rbenv init -)"
 # pyenv
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYENV="true"
 eval "$(pyenv init -)"
-pyenv virtualenvwrapper
 
 # golang
 export GOPATH="$HOME/Sites/go"

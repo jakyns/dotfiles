@@ -5,10 +5,6 @@
     dest: ~/.pyenv
     force: yes
 
-- name: install pyenv packages
-  homebrew: name={{ item }} state=present
-  with_items: "{{ pyenv_packages }}"
-
 - name: install pyenv-pip-rehash
   git:
     repo: https://github.com/yyuu/pyenv-pip-rehash.git
