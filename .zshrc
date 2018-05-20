@@ -22,10 +22,14 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
+# pipenv
+eval "$(pipenv --completion)"
+
 # golang
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
 
 # os
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 export EDITOR=/usr/bin/vim
-
