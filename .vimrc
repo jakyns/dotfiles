@@ -34,6 +34,12 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 
+" Windows resizing
+nnoremap rhh :vertical resize -10<cr>
+nnoremap rjj :resize +10<cr>
+nnoremap rkk :resize -10<cr>
+nnoremap rll :vertical resize +10<cr>
+
 syntax on
 filetype on
 filetype indent on
