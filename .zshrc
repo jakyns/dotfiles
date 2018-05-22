@@ -33,3 +33,13 @@ export PATH="$PATH:$GOPATH/bin"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=/usr/bin/vim
+
+watch () {
+  while true
+  do
+    $@
+    fswatch -1r .
+    clear
+    sleep 1
+  done
+}

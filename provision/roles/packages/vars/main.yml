@@ -6,6 +6,7 @@ brew_packages:
   - autojump
   - elixir
   - fish
+  - fswatch
   - kubectl
   - kubectx
   - kubernetes-cli
