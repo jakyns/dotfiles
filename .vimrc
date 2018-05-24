@@ -10,6 +10,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-commentary'
 Plugin 'fatih/vim-go'
 Plugin 'rking/ag.vim'
 
