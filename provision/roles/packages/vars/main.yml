@@ -20,6 +20,7 @@ cask_taps:
   - caskroom/versions
 
 cask_packages:
+  - 1password
   - alfred
   - appcleaner
   - atom
