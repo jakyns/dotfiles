@@ -34,6 +34,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=/usr/bin/vim
 
+# watch
 watch () {
   while true
   do
@@ -43,3 +44,9 @@ watch () {
     sleep 1
   done
 }
+
+# stats
+function stats() {
+  fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep --color=auto -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n20
+}
+
