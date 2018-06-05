@@ -20,7 +20,7 @@ call vundle#end()
 map <C-l> :NERDTreeToggle<CR>
 
 set nowrap
-set textwidth=70                    " Margin enforcement
+set textwidth=80                    " Margin enforcement
 set colorcolumn=+1                  " Margin guide
 set backspace=indent,eol,start      " Backspace over everything
 
