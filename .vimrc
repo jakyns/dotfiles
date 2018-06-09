@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
@@ -27,6 +26,8 @@ set backspace=indent,eol,start      " Backspace over everything
 " Editing
 set number                          " Show lines numbers
 set cul                             " Highlight current line for active window
+set autoread                        " Check one time after 4s of inactivity in normal mode
+au CursorHold * checktime
 
 " Indentation
 set expandtab
