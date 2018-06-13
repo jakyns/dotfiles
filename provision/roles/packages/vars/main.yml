@@ -14,6 +14,7 @@ brew_packages:
   - postgresql
   - reattach-to-user-namespace
   - the_silver_searcher
+  - yarn
 
 cask_taps:
   - caskroom/cask
