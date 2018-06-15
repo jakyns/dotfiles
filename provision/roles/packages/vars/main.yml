@@ -17,8 +17,7 @@ brew_packages:
   - yarn
 
 cask_taps:
-  - caskroom/cask
-  - caskroom/versions
+  - homebrew/cask
 
 cask_packages:
   - 1password
