@@ -23,7 +23,6 @@ cask_packages:
   - 1password
   - alfred
   - appcleaner
-  - atom
   - discord
   - docker
   - dropbox
@@ -40,6 +39,7 @@ cask_packages:
   - spotify
   - sublime-text
   - transmission
+  - visual-studio-code
   - vlc
 
 # custom/zsh
