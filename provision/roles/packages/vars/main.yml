@@ -38,6 +38,7 @@ cask_packages:
   - sourcetree
   - spotify
   - sublime-text
+  - telegram
   - transmission
   - visual-studio-code
   - vlc
