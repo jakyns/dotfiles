@@ -1,3 +1,0 @@
----
-- name: install golang
-  homebrew: name=golang state=latest

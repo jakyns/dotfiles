@@ -1,10 +1,15 @@
 ---
 - name: install node
-  homebrew: name=node state=latest
+  homebrew: name={{ node_package }} state=present
+
+- name: install node packages
+  homebrew: name={{ item }} state=present
+  with_items: "{{ node_packages }}"
+
 
 - name: install npm packages
   npm:
     name: "{{ item }}"
-    state: latest
+    state: present
     global: true
-  with_items: "{{ node_packages }}"
+  with_items: "{{ npm_packages }}"

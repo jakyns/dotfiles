@@ -1,0 +1,7 @@
+---
+- name: install go
+  homebrew: name={{ go_package }} state=present
+
+- name: install go packages
+  homebrew: name={{ item }} state=present
+  with_items: "{{ go_packages }}"

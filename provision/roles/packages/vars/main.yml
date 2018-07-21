@@ -4,17 +4,11 @@ brew_taps:
 
 brew_packages:
   - autojump
-  - elixir
   - fish
   - fswatch
-  - kubectl
-  - kubectx
-  - kubernetes-cli
-  - kubernetes-helm
   - postgresql
   - reattach-to-user-namespace
   - the_silver_searcher
-  - yarn
 
 cask_taps:
   - homebrew/cask
@@ -53,9 +47,21 @@ zsh_packages:
 
 # custom/node
 
+node_package: node
+
 node_packages:
+  - yarn
+
+npm_packages:
   - pm2
   - dockly
+
+# custom/go
+
+go_package: go
+
+go_packages:
+  - dep
 
 # custom/python
 
@@ -65,17 +71,29 @@ python_versions:
 
 python3_version: 3.6.5
 
-python3_packages:
+pip_packages:
   - pip
   - pipenv
-  - awscli
-  - ipython
   - virtualenv
+  - ipython
+  - awscli
 
 # custom/ruby
 
 ruby_version: 2.3.5
 
-ruby_packages:
+gem_packages:
   - bundler
   - pry
+
+# custom/elixir
+
+elixir_package: elixir
+
+# custom/kubernetes
+
+kubernetes_packages:
+  - kubectl
+  - kubectx
+  - kubernetes-cli
+  - kubernetes-helm

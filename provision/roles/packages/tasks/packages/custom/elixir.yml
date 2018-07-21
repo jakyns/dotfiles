@@ -1,0 +1,3 @@
+---
+- name: install elixir
+  homebrew: name={{ elixir_package }} state=present

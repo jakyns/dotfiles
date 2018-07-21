@@ -1,6 +1,7 @@
 ---
 - include: "custom/zsh.yml"
 - include: "custom/nodejs.yml"
+- include: "custom/go.yml"
 - include: "custom/python.yml"
 - include: "custom/ruby.yml"
-- include: "custom/golang.yml"
+- include: "custom/kubernetes.yml"

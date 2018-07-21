@@ -21,10 +21,10 @@
 - name: install ruby packages
   gem:
     name: "{{ item }}"
-    state: latest
+    state: present
     user_install: false
     executable: ~/.rbenv/versions/{{ ruby_version }}/bin/gem
-  with_items: "{{ ruby_packages }}"
+  with_items: "{{ gem_packages }}"
   notify:
     - update rbenv shims
 
