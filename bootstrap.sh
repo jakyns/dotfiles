@@ -81,7 +81,6 @@ cleanup() {
     echo_wait 'Cleaning up...'
     rm "$HOME"/.homebrew_analytics_user_uuid >/dev/null 2>&1
     brew cleanup
-    brew cask cleanup
 }
 
 bootstrap_macos() {
