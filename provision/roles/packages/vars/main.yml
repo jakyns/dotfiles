@@ -10,6 +10,10 @@ brew_packages:
   - reattach-to-user-namespace
   - the_silver_searcher
 
+  # Telepresence
+  - socat
+  - datawire/blackbird/telepresence
+
 cask_taps:
   - homebrew/cask
 
@@ -26,6 +30,7 @@ cask_packages:
   - google-cloud-sdk
   - iterm2
   - numi
+  - osxfuse
   - postico
   - postman
   - sequel-pro
