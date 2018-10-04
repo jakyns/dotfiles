@@ -27,6 +27,7 @@ setenv() {
 xcode_setup() {
     echo_wait 'Determining Xcode status. You may need to enter root password...'
     if ! xcode-select --install 2>/dev/null; then
+        installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
         echo_ok 'Xcode has been successfully setup.'
     echo_ok 'Please make sure to run sudo xcodebuild -license'
     fi
