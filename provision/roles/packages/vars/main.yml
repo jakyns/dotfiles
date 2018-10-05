@@ -1,18 +1,17 @@
 ---
 brew_taps:
-  - homebrew/versions
+  - datawire/blackbird
+  - homebrew/cask
+  - homebrew/core
 
 brew_packages:
   - autojump
   - fish
   - fswatch
   - postgresql
-  - reattach-to-user-namespace
-  - the_silver_searcher
 
-  # Telepresence
-  - socat
-  - datawire/blackbird/telepresence
+  # https://github.com/ggreer/the_silver_searcher
+  - the_silver_searcher
 
 cask_taps:
   - homebrew/cask
@@ -85,7 +84,7 @@ pip_packages:
 
 # custom/ruby
 
-ruby_version: 2.3.5
+ruby_version: 2.3.7
 
 gem_packages:
   - bundler
@@ -102,3 +101,7 @@ kubernetes_packages:
   - kubectx
   - kubernetes-cli
   - kubernetes-helm
+
+  # telepresence (http://telepresence.io)
+  - socat
+  - datawire/blackbird/telepresence

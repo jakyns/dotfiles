@@ -4,4 +4,5 @@
 - include: "custom/go.yml"
 - include: "custom/python.yml"
 - include: "custom/ruby.yml"
+- include: "custom/elixir.yml"
 - include: "custom/kubernetes.yml"
