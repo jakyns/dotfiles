@@ -27,7 +27,6 @@ setenv() {
 xcode_setup() {
     echo_wait 'Determining Xcode status. You may need to enter root password...'
     if ! xcode-select --install 2>/dev/null; then
-        installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
         echo_ok 'Xcode has been successfully setup.'
     echo_ok 'Please make sure to run sudo xcodebuild -license'
     fi
@@ -39,6 +38,16 @@ brew_setup() {
     else
         echo_wait 'Homebrew is not installed. Installing...'
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    fi
+}
+
+fix_zlib_package() {
+    echo_wait 'Temporarily fix zlib package in MacOS Mojave.'
+    if pkgutil --pkgs=com.apple.pkg.macOS_SDK_headers_for_macOS_10.14; then
+        echo_ok 'macOS_SDK_headers_for_macOS_10.14 package is already installed.'
+    else
+        echo_wait 'Installing macOS_SDK_headers_for_macOS_10.14.pkg package.'
+        sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
     fi
 }
 
@@ -88,6 +97,10 @@ bootstrap_macos() {
     setenv
     xcode_setup
     brew_setup
+
+    # TODO: fix MacOS Mojave zlib package is missing
+    fix_zlib_package
+
     ansible_bootstrap
     ansible_run
     cask_update
