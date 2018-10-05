@@ -5,4 +5,5 @@
     path: "{{ item.dest }}"
     state: link
     force: yes
+    follow: false
   with_items: "{{ links }}"
