@@ -28,6 +28,7 @@ eval "$(pipenv --completion)"
 # golang
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
+export GO111MODULE=on
 
 # os
 export LC_ALL=en_US.UTF-8
