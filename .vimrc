@@ -1,9 +1,9 @@
 set nocompatible
 filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
@@ -12,8 +12,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'fatih/vim-go'
 Plugin 'rking/ag.vim'
-
+Plugin 'morhetz/gruvbox'
 call vundle#end()
+
+colorscheme gruvbox
 
 " Nerdtree
 map <C-l> :NERDTreeToggle<CR>
