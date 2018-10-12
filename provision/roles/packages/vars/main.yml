@@ -9,6 +9,7 @@ brew_packages:
   - fish
   - fswatch
   - postgresql
+  - libxml2
 
   # https://github.com/ggreer/the_silver_searcher
   - the_silver_searcher
