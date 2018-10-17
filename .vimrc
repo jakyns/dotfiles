@@ -13,6 +13,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'fatih/vim-go'
 Plugin 'rking/ag.vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'elixir-editors/vim-elixir'
 call vundle#end()
 
 colorscheme gruvbox
