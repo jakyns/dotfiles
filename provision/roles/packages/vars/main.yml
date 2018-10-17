@@ -23,6 +23,7 @@ cask_packages:
   - appcleaner
   - discord
   - docker
+  - drawio
   - dropbox
   - firefox
   - google-backup-and-sync
@@ -101,3 +102,4 @@ kubernetes_packages:
   - kubectx
   - kubernetes-cli
   - kubernetes-helm
+
