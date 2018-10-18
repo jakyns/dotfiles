@@ -19,7 +19,11 @@ call vundle#end()
 colorscheme gruvbox
 
 " Nerdtree
+let NERDTreeShowHidden=1
 map <C-l> :NERDTreeToggle<CR>
+
+" CtrlP
+let g:ctrlp_show_hidden = 1
 
 set nowrap
 set textwidth=80                    " Margin enforcement
