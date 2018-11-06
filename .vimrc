@@ -34,6 +34,8 @@ set backspace=indent,eol,start      " Backspace over everything
 set number                          " Show lines numbers
 set cul                             " Highlight current line for active window
 set autoread                        " Check one time after 4s of inactivity in normal mode
+set timeoutlen=1000
+set ttimeoutlen=0
 au CursorHold * checktime
 
 " Indentation
