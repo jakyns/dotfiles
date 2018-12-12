@@ -20,6 +20,7 @@ colorscheme gruvbox
 
 " Nerdtree
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$']
 map <C-l> :NERDTreeToggle<CR>
 
 " CtrlP
