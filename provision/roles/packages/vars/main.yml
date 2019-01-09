@@ -30,6 +30,7 @@ cask_packages:
   - google-chrome
   - google-cloud-sdk
   - iterm2
+  - ngrok
   - numi
   - postico
   - postman
