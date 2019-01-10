@@ -21,6 +21,7 @@ colorscheme gruvbox
 " Nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeNodeDelimiter = "\u00a0"
 map <C-l> :NERDTreeToggle<CR>
 
 " CtrlP
