@@ -16,6 +16,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'elixir-editors/vim-elixir'
 call vundle#end()
 
+set background=dark
 colorscheme gruvbox
 
 " Nerdtree
@@ -53,3 +54,4 @@ filetype indent on
 filetype plugin on
 
 let g:go_fmt_command = "goimports"
+
