@@ -26,5 +26,5 @@ links:
     dest: ~/.guard.rb
 
   - source: ~/dotfiles/.alacritty.yml
-    dest: ~/.config/alacritty/alacritty.yml
+    dest: ~/.config/alacritty/.alacritty.yml
 

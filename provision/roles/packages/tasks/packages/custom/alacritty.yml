@@ -1,0 +1,9 @@
+---
+- name: install alacritty
+  homebrew_cask: name=alacritty state=present
+
+- name: getting alacritty config
+  file:
+    path: "~/.config/alacritty"
+    state: directory
+    mode: 0755

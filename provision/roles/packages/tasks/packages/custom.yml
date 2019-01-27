@@ -1,5 +1,6 @@
 ---
 - include: "custom/zsh.yml"
+- include: "custom/alacritty.yml"
 - include: "custom/nodejs.yml"
 - include: "custom/go.yml"
 - include: "custom/python.yml"
