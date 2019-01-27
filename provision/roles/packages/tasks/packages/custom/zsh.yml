@@ -1,7 +1,6 @@
 ---
 - name: install zsh packages
-  homebrew: name={{ item }} state=present
-  with_items: "{{ zsh_packages }}"
+  homebrew: name={{ zsh_packages }} state=present
 
 - name: ensure zsh is in /etc/shells
   become: yes
@@ -20,3 +19,4 @@
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
     dest: ~/.oh-my-zsh
+    force: yes
