@@ -27,6 +27,7 @@ map <C-l> :NERDTreeToggle<CR>
 
 " CtrlP
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_use_caching = 0
 
 set nowrap
 set textwidth=80                    " Margin enforcement
