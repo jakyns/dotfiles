@@ -8,6 +8,7 @@ brew_packages:
   - autojump
   - fish
   - fswatch
+  - htop
   - postgresql
   - libxml2
 
