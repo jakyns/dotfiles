@@ -1,7 +1,7 @@
 # zsh
 export ZSH=~/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(zsh-autosuggestions git rails)
+plugins=(git rails)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
