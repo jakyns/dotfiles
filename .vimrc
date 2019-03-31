@@ -10,24 +10,26 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
-Plugin 'fatih/vim-go'
 Plugin 'rking/ag.vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'tmhedberg/SimpylFold'
+" Python
+Plugin 'vim-scripts/indentpython.vim'
+" Go
+Plugin 'fatih/vim-go'
+" Elixir
 Plugin 'elixir-editors/vim-elixir'
 call vundle#end()
 
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+
+set encoding=utf-8
+set clipboard=unnamed
 set background=dark
 colorscheme gruvbox
-
-" Nerdtree
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$']
-let g:NERDTreeNodeDelimiter = "\u00a0"
-map <C-l> :NERDTreeToggle<CR>
-
-" CtrlP
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_use_caching = 0
 
 set nowrap
 set textwidth=80                    " Margin enforcement
@@ -49,10 +51,24 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 
-syntax on
-filetype on
-filetype indent on
-filetype plugin on
+" Nerdtree
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$']
+let g:NERDTreeNodeDelimiter = "\u00a0"
+map <C-l> :NERDTreeToggle<CR>
 
+" CtrlP
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_use_caching = 0
+
+" SimpylFold
+set foldlevelstart=99
+set foldmethod=indent
+let g:SimpylFold_docstring_preview = 1
+
+" Python
+let python_highlight_all=1
+
+" Go
 let g:go_fmt_command = "goimports"
 
