@@ -83,8 +83,7 @@ pip_packages:
   - pip
   - pipenv
   - virtualenv
-  - ipython
-  - awscli
+  - jupyter
 
 # custom/ruby
 
