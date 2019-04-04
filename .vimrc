@@ -1,18 +1,19 @@
 set nocompatible
 filetype off
 
+set rtp+=/usr/local/opt/fzf
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
-Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'rking/ag.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'junegunn/fzf.vim'
 " Python
 Plugin 'vim-scripts/indentpython.vim'
 " Go
@@ -57,9 +58,8 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:NERDTreeNodeDelimiter = "\u00a0"
 map <C-l> :NERDTreeToggle<CR>
 
-" CtrlP
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_use_caching = 0
+" fzf
+nnoremap <silent> <C-p> :FZF<CR>
 
 " SimpylFold
 set foldlevelstart=99

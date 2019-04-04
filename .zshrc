@@ -11,11 +11,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 
-# editor
+# default editor
 export EDITOR=/usr/bin/vim
 
 # enable tmux color scheme
 export TERM=screen-256color
+
+# fzf
+export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 
 # sublime text
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"

@@ -9,6 +9,7 @@ brew_packages:
   - fish
   - fswatch
   - htop
+  - fzf
   - postgresql
   - libxml2
 
