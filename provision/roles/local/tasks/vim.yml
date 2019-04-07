@@ -7,3 +7,6 @@
 
 - name: install/update VIM plugins
   shell: vim +PluginInstall! +qall
+
+- name: clean VIM plugins
+  shell: vim +PluginClean! +qall
