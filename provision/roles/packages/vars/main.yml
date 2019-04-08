@@ -83,8 +83,9 @@ python3_version: 3.6.5
 
 pip_packages:
   - pip
-  - pipenv
   - virtualenv
+  - pipenv
+  - pynvim
   - jupyter
 
 # custom/ruby
