@@ -18,13 +18,12 @@
   with_items: "{{ python_versions }}"
   notify: update default python
 
-# - name: install python packages
-#   pip:
-#     name: "{{ item }}"
-#     state: present
-#     executable: ~/.pyenv/versions/{{ python3_version }}/bin/pip
-#     chdir: ~/.pyenv/versions/{{ python3_version }}
-#   with_items: "{{ pip_packages }}"
-#   notify: update pyenv shims
-#   environment:
-#     PYTHONPATH:
+- name: install python packages
+  pip:
+    name: "{{ pip_packages }}"
+    state: present
+    executable: ~/.pyenv/versions/{{ python3_version }}/bin/pip
+    chdir: ~/.pyenv/versions/{{ python3_version }}
+  notify: update pyenv shims
+  environment:
+    PYTHONPATH:
