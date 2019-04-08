@@ -16,6 +16,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'junegunn/fzf.vim'
 " Python
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'davidhalter/jedi-vim'
 " Go
 Plugin 'fatih/vim-go'
 " Elixir
