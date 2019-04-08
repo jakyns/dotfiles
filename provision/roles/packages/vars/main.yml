@@ -65,13 +65,7 @@ node_packages:
 npm_packages:
   - pm2
   - dockly
-
-# custom/go
-
-go_package: go
-
-go_packages:
-  - dep
+  - neovim
 
 # custom/python
 
@@ -85,8 +79,8 @@ pip_packages:
   - pip
   - virtualenv
   - pipenv
-  - pynvim
   - jupyter
+  - pynvim
 
 # custom/ruby
 
@@ -95,6 +89,14 @@ ruby_version: 2.5.3
 gem_packages:
   - bundler
   - pry
+  - neovim
+
+# custom/go
+
+go_package: go
+
+go_packages:
+  - dep
 
 # custom/elixir
 
