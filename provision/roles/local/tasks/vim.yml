@@ -10,3 +10,20 @@
 
 - name: clean VIM plugins
   shell: vim +PluginClean! +qall
+
+- name: initial nvim directory
+  file:
+    path: "~/.config/nvim"
+    state: directory
+
+- name: copy nvim config
+  copy:
+    src: files/nvim/init.vim
+    dest: ~/.config/nvim/
+    force: yes
+
+- name: install/update VIM plugins for neovim
+  shell: nvim +PluginInstall! +qall
+
+- name: clean VIM plugins for neovim
+  shell: nvim +PluginClean! +qall

@@ -28,12 +28,12 @@
   notify:
     - update rbenv shims
 
-- name: creating bundle folder
+- name: initial bundle folder
   file:
     path: ~/.bundle
     state: directory
 
-- name: getting bundle config
+- name: copy bundle config
   copy:
     src: files/ruby/bundle/config
     dest: ~/.bundle

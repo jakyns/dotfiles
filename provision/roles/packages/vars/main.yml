@@ -10,6 +10,7 @@ brew_packages:
   - fswatch
   - htop
   - fzf
+  - neovim
   - postgresql
   - libxml2
 
