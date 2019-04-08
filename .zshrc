@@ -12,7 +12,9 @@ export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 
 # default editor
-export EDITOR=/usr/bin/vim
+alias vi=nvim
+alias vim=nvim
+export EDITOR=/usr/local/bin/nvim
 
 # enable tmux color scheme
 export TERM=screen-256color
