@@ -69,11 +69,11 @@ let g:SimpylFold_docstring_preview = 1
 
 " Python
 let python_highlight_all=1
-let g:python_host_prog  = '/Users/bank/.pyenv/shims/python'
-let g:python3_host_prog  = '/Users/bank/.pyenv/shims/python3'
+let g:python_host_prog  = '~/.pyenv/shims/python'
+let g:python3_host_prog  = '~/.pyenv/shims/python3'
 
 " Ruby
-let g:ruby_host_prog = '/Users/bank/.rbenv/shims/ruby'
+let g:ruby_host_prog = '~/.rbenv/shims/ruby'
 
 " Node.js
 let g:node_host_prog = '/usr/local/bin/node'
