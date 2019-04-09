@@ -76,7 +76,7 @@ let g:python3_host_prog  = '~/.pyenv/shims/python3'
 let g:ruby_host_prog = '~/.rbenv/shims/ruby'
 
 " Node.js
-let g:node_host_prog = '/usr/local/bin/node'
+let g:node_host_prog = '/usr/local/bin/neovim-node-host'
 
 " Go
 let g:go_fmt_command = "goimports"
