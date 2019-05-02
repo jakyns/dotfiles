@@ -41,14 +41,8 @@ brew_setup() {
     fi
 }
 
-fix_zlib_package() {
-    echo_wait 'Temporarily fix zlib package in MacOS Mojave.'
-    if pkgutil --pkgs=com.apple.pkg.macOS_SDK_headers_for_macOS_10.14; then
-        echo_ok 'macOS_SDK_headers_for_macOS_10.14 package is already installed.'
-    else
-        echo_wait 'Installing macOS_SDK_headers_for_macOS_10.14.pkg package.'
-        sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-    fi
+update_zlib_package() {
+    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 }
 
 ansible_bootstrap() {
@@ -97,10 +91,7 @@ bootstrap_macos() {
     setenv
     xcode_setup
     brew_setup
-
-    # TODO: fix MacOS Mojave zlib package is missing
-    fix_zlib_package
-
+    update_zlib_package
     ansible_bootstrap
     ansible_run
     cask_update
