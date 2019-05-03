@@ -6,6 +6,7 @@ brew_taps:
 
 brew_packages:
   - autojump
+  - elm
   - fish
   - fswatch
   - htop
@@ -63,6 +64,10 @@ node_packages:
   - yarn
 
 npm_packages:
+  - elm
+  - elm-test
+  - elm-oracle
+  - elm-format
   - pm2
   - dockly
   - neovim
