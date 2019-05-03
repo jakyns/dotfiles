@@ -25,6 +25,7 @@ cask_packages:
   - 1password
   - alfred
   - appcleaner
+  - awscli
   - discord
   - docker
   - drawio
