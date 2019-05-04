@@ -1,10 +1,6 @@
 ---
-- name: install node
-  homebrew: name={{ node_package }} state=present
-
-- name: install node packages
+- name: install node and yarn
   homebrew: name={{ node_packages }} state=present
-
 
 - name: install npm packages
   npm:

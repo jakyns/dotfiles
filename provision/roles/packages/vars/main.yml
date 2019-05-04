@@ -61,13 +61,11 @@ zsh_packages:
 
 # custom/node
 
-node_package: node
-
 node_packages:
+  - node
   - yarn
 
 npm_packages:
-  - elm
   - elm-test
   - elm-oracle
   - elm-format
