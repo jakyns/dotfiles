@@ -3,12 +3,14 @@ brew_taps:
   - datawire/blackbird
   - homebrew/cask
   - homebrew/core
+  - heroku/brew
 
 brew_packages:
   - autojump
   - elm
   - fish
   - fswatch
+  - heroku
   - htop
   - fzf
   - neovim
