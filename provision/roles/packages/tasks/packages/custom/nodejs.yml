@@ -2,6 +2,7 @@
 - name: install node and yarn
   homebrew: name={{ node_packages }} state=present
 
+# TODO: use yarn instead of npm
 - name: install npm packages
   npm:
     name: "{{ item }}"
