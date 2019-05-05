@@ -101,9 +101,6 @@ gem_packages:
 
 go_package: go
 
-go_packages:
-  - dep
-
 # custom/elixir
 
 elixir_package: elixir
