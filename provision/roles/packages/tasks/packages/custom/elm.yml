@@ -1,0 +1,12 @@
+---
+- name: install elm
+  homebrew: name={{ elm_package }} state=present
+
+# TODO: waiting Ansible to fix yarn to use add instead of install
+# ref: https://github.com/ansible/ansible/issues/55098
+- name: install elm packages
+  yarn:
+    name: "{{ item }}"
+    state: present
+    global: true
+  with_items: "{{ elm_packages }}"

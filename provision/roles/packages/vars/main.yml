@@ -1,13 +1,12 @@
 ---
 brew_taps:
-  - datawire/blackbird
   - homebrew/cask
   - homebrew/core
+  - datawire/blackbird
   - heroku/brew
 
 brew_packages:
   - autojump
-  - elm
   - fish
   - fswatch
   - heroku
@@ -61,17 +60,24 @@ zsh_packages:
 
 # custom/node
 
-node_packages:
-  - node
-  - yarn
+node_package: node
 
-npm_packages:
-  - elm-test
-  - elm-oracle
-  - elm-format
+yarn_package: yarn
+
+yarn_packages:
   - pm2
   - dockly
   - neovim
+
+# custom/elm
+
+elm_package: elm
+
+elm_packages:
+  - elm-test
+  - elm-oracle
+  - elm-format
+  - create-elm-app
 
 # custom/python
 
