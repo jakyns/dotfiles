@@ -27,6 +27,7 @@ cask_packages:
   - alfred
   - appcleaner
   - awscli
+  - dash
   - discord
   - docker
   - drawio
