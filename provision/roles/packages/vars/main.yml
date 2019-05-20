@@ -15,8 +15,6 @@ brew_packages:
   - neovim
   - postgresql
   - libxml2
-
-  # https://github.com/ggreer/the_silver_searcher
   - the_silver_searcher
 
 cask_taps:
@@ -92,7 +90,6 @@ pip_packages:
   - pip
   - virtualenv
   - pipenv
-  - jupyter
   - pynvim
 
 # custom/ruby
