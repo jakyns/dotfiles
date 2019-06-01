@@ -23,6 +23,7 @@ cask_taps:
 
 cask_packages:
   - 1password
+  - alacritty
   - alfred
   - appcleaner
   - dash
