@@ -17,6 +17,7 @@ Plugin 'junegunn/fzf.vim'
 " Python
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'python/black'
 " Go
 Plugin 'fatih/vim-go'
 " Elixir
@@ -73,6 +74,9 @@ let g:SimpylFold_docstring_preview = 1
 let python_highlight_all=1
 let g:python_host_prog  = '~/.pyenv/shims/python'
 let g:python3_host_prog  = '~/.pyenv/shims/python3'
+let g:black_virtualenv = '~/.vim/black'
+
+autocmd BufWritePre *.py execute ':Black'
 
 " Ruby
 let g:ruby_host_prog = '~/.rbenv/shims/ruby'
