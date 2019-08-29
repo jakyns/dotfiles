@@ -94,6 +94,7 @@ pip_packages:
   - virtualenv
   - pipenv
   - pynvim
+  - black
 
 # custom/ruby
 
