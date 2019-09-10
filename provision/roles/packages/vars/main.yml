@@ -26,6 +26,7 @@ cask_packages:
   - alacritty
   - alfred
   - appcleaner
+  - brave-browser
   - dash
   - discord
   - docker
