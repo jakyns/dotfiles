@@ -7,3 +7,4 @@
 - include: "custom/ruby.yml"
 - include: "custom/elixir.yml"
 - include: "custom/kubernetes.yml"
+- include: "custom/phabricator.yml"
