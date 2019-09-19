@@ -41,10 +41,6 @@ brew_setup() {
     fi
 }
 
-update_zlib_package() {
-    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-}
-
 ansible_bootstrap() {
     if hash ansible-playbook 2>/dev/null; then
         echo_ok 'Ansible is already installed.'
@@ -91,7 +87,6 @@ bootstrap_macos() {
     setenv
     xcode_setup
     brew_setup
-    update_zlib_package
     ansible_bootstrap
     ansible_run
     cask_update
