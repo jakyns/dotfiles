@@ -2,6 +2,7 @@
 
 fonts:
   - fonts/meslo_lg_m_regular_for_powerline.ttf
+  - fonts/cascadia.ttf
 
 dots:
   - ~/.ssh
