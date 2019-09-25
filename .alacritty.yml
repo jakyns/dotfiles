@@ -21,7 +21,7 @@ tabspaces: 8
 
 font:
   normal:
-    family: Monaco
+    family: Cascadia Code
     style: Regular
 
   bold:
