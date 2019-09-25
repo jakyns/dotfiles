@@ -4,6 +4,7 @@ brew_taps:
   - homebrew/core
   - datawire/blackbird
   - heroku/brew
+  - caskroom/fonts
 
 brew_packages:
   - autojump
@@ -18,9 +19,6 @@ brew_packages:
   - libxml2
   - the_silver_searcher
 
-cask_taps:
-  - homebrew/cask
-
 cask_packages:
   - 1password
   - alacritty
@@ -34,6 +32,7 @@ cask_packages:
   - dropbox
   - figma
   - firefox
+  - font-cascadia
   - google-backup-and-sync
   - google-chrome
   - google-cloud-sdk
