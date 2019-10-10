@@ -111,7 +111,6 @@ scala_packages: sbt
 # custom/kubernetes
 
 kubernetes_packages:
-  - kubectl
-  - kubectx
   - kubernetes-cli
   - kubernetes-helm
+  - kubectx
