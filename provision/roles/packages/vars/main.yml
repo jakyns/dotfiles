@@ -63,18 +63,12 @@ zsh_packages:
 
 # custom/node
 
-node_package: node
-
-yarn_package: yarn
-
 yarn_packages:
   - pm2
   - dockly
   - neovim
 
 # custom/elm
-
-elm_package: elm
 
 elm_packages:
   - elm-test
@@ -108,11 +102,7 @@ gem_packages:
 
 # custom/go
 
-go_packages: go
-
 # custom/elixir
-
-elixir_package: elixir
 
 # custom/scala
 

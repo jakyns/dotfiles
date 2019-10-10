@@ -1,9 +1,9 @@
 ---
 - name: install node
-  homebrew: name={{ node_package }} state=present
+  homebrew: name=node state=present
 
 - name: install yarn
-  homebrew: name={{ yarn_package }} state=present
+  homebrew: name=yarn state=present
 
 # TODO: waiting Ansible to fix yarn to use add instead of install
 # ref: https://github.com/ansible/ansible/issues/55097
