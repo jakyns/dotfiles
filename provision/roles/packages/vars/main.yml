@@ -2,9 +2,9 @@
 brew_taps:
   - homebrew/cask
   - homebrew/core
+  - homebrew/cask-fonts
   - datawire/blackbird
   - heroku/brew
-  - caskroom/fonts
 
 brew_packages:
   - autojump
@@ -29,7 +29,6 @@ cask_packages:
   - discord
   - docker
   - drawio
-  - dropbox
   - figma
   - firefox
   - font-cascadia
