@@ -8,4 +8,3 @@
 - include: "custom/elixir.yml"
 - include: "custom/scala.yml"
 - include: "custom/kubernetes.yml"
-- include: "custom/phabricator.yml"

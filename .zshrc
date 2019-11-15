@@ -44,9 +44,6 @@ eval "$(rbenv init -)"
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
 
-# phabricator
-export PATH="$PATH:$HOME/tools/phabricator/arcanist/bin"
-
 # watch
 watch () {
   while true
@@ -56,9 +53,4 @@ watch () {
     clear
     sleep 1
   done
-}
-
-# stats
-function stats() {
-  fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep --color=auto -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n20
 }
