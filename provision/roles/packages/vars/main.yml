@@ -54,6 +54,7 @@ cask_packages:
   - trezor-bridge
   - visual-studio-code
   - vlc
+  - whatsapp
 
 # custom/zsh
 
