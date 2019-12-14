@@ -5,8 +5,6 @@
 - name: install yarn
   homebrew: name=yarn state=present
 
-# TODO: waiting Ansible to fix yarn to use add instead of install
-# ref: https://github.com/ansible/ansible/issues/55097
 - name: install yarn packages
   yarn:
     name: "{{ item }}"

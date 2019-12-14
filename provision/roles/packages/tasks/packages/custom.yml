@@ -1,7 +1,7 @@
 ---
 - include: "custom/zsh.yml"
-# - include: "custom/nodejs.yml"
-# - include: "custom/elm.yml"
+- include: "custom/nodejs.yml"
+- include: "custom/elm.yml"
 - include: "custom/go.yml"
 - include: "custom/python.yml"
 - include: "custom/ruby.yml"
