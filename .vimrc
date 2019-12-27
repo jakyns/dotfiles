@@ -22,6 +22,7 @@ Plugin 'python/black'
 Plugin 'fatih/vim-go'
 " Elixir
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'mhinz/vim-mix-format'
 " Elm
 Plugin 'ElmCast/elm-vim'
 call vundle#end()
@@ -86,6 +87,9 @@ let g:node_host_prog = '/usr/local/bin/neovim-node-host'
 
 " Go
 let g:go_fmt_command = "goimports"
+
+" Elixir
+let g:mix_format_on_save = 1
 
 " Elm
 let g:elm_jump_to_error = 0
