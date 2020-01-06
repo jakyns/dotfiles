@@ -44,7 +44,6 @@ cask_packages:
   - postico
   - postman
   - sequel-pro
-  - sizeup
   - slack
   - sourcetree
   - spotify
