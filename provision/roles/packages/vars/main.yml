@@ -81,9 +81,9 @@ elm_packages:
 
 python_versions:
   - 2.7.13
-  - 3.7.3
+  - 3.8.0
 
-python3_version: 3.7.3
+python3_version: 3.8.0
 
 pip_packages:
   - pip
@@ -94,7 +94,7 @@ pip_packages:
 
 # custom/ruby
 
-ruby_version: 2.6.5
+ruby_version: 2.7.0
 
 gem_packages:
   - bundler
