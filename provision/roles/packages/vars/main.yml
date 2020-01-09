@@ -65,9 +65,9 @@ zsh_packages:
 # custom/node
 
 yarn_packages:
+  - neovim
   - pm2
   - dockly
-  - neovim
 
 # custom/elm
 
@@ -86,10 +86,10 @@ python_versions:
 python3_version: 3.8.0
 
 pip_packages:
+  - pynvim
   - pip
   - virtualenv
   - pipenv
-  - pynvim
   - black
 
 # custom/ruby
@@ -97,9 +97,10 @@ pip_packages:
 ruby_version: 2.7.0
 
 gem_packages:
-  - bundler
-  - pry
   - neovim
+  - bundler
+  - rails
+  - pry
 
 # custom/go
 
