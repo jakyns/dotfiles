@@ -14,6 +14,7 @@ Plugin 'rking/ag.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'junegunn/fzf.vim'
+Plugin 'itchyny/lightline.vim'
 " Python
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
@@ -56,6 +57,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
+
+" lightline
+let g:lightline = {'colorscheme': 'solarized'}
 
 " Nerdtree
 let NERDTreeShowHidden=1
