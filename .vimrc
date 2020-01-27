@@ -58,9 +58,6 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 
-" lightline
-let g:lightline = {'colorscheme': 'solarized'}
-
 " Nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$']
@@ -74,6 +71,23 @@ nnoremap <silent> <C-p> :FZF<CR>
 set foldlevelstart=99
 set foldmethod=indent
 let g:SimpylFold_docstring_preview = 1
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ }
+      \ }
+
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
 
 " Python
 let python_highlight_all=1
@@ -105,4 +119,3 @@ let g:elm_detailed_complete = 0
 let g:elm_format_autosave = 1
 let g:elm_format_fail_silently = 0
 let g:elm_setup_keybindings = 1
-
