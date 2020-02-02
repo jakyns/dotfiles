@@ -20,7 +20,7 @@ tabspaces: 8
 
 font:
   normal:
-    family: Cascadia Code
+    family: JetBrains Mono
     style: Regular
 
   bold:

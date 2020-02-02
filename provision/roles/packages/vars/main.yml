@@ -34,6 +34,7 @@ cask_packages:
   - figma
   - firefox
   - font-cascadia
+  - font-jetbrains-mono
   - google-backup-and-sync
   - google-chrome
   - google-cloud-sdk
