@@ -12,13 +12,13 @@ brew_packages:
   - exercism
   - fish
   - fswatch
+  - fzf
   - gpg
   - heroku
   - htop
-  - fzf
+  - libxml2
   - neovim
   - postgresql
-  - libxml2
   - the_silver_searcher
 
 cask_packages:
