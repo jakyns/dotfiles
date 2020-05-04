@@ -28,6 +28,10 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
+# python
+alias python=python3
+alias pip=pip3
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
