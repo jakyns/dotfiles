@@ -21,6 +21,7 @@ brew_packages:
   - neovim
   - postgresql
   - the_silver_searcher
+  - tree
 
 cask_packages:
   - 1password
