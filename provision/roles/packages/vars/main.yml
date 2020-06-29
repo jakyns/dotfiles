@@ -17,6 +17,7 @@ brew_packages:
   - heroku
   - htop
   - libxml2
+  - mas
   - neovim
   - postgresql
   - the_silver_searcher
@@ -55,6 +56,15 @@ cask_packages:
   - visual-studio-code
   - vlc
   - whatsapp
+
+mas_packages:
+  - 409201541   # Pages
+  - 409203825   # Numbers
+  - 409183694   # Keynote
+  - 408981434   # iMovie
+  - 1091189122  # Bear
+  - 441258766   # Magnet
+  - 539883307   # LINE
 
 # custom/zsh
 

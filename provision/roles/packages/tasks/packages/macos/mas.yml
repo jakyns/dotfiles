@@ -1,0 +1,4 @@
+---
+- name: install mac app store packages
+  command: mas install {{ item }}
+  with_items: "{{ mas_packages }}"
