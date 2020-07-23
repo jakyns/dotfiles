@@ -19,6 +19,7 @@ brew_packages:
   - hyperkit
   - libxml2
   - mas
+  - minikube
   - neovim
   - postgresql
   - the_silver_searcher
