@@ -16,6 +16,7 @@ brew_packages:
   - gpg
   - heroku
   - htop
+  - hyperkit
   - libxml2
   - mas
   - neovim
