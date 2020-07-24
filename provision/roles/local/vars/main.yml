@@ -25,3 +25,5 @@ links:
   - source: ~/dotfiles/.alacritty.yml
     dest: ~/.alacritty.yml
 
+  - source: ~/dotfiles/.kubectl_aliases
+    dest: ~/.kubectl_aliases

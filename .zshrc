@@ -48,6 +48,10 @@ eval "$(rbenv init -)"
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
 
+# kubectl_aliases
+[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
+kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
+
 # watch
 watch () {
   while true
