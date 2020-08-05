@@ -15,6 +15,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 " Python
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
