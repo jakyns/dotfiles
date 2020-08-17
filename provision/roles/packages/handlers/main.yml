@@ -5,7 +5,7 @@
 # custom/python
 
 - name: update default python
-  command: ~/.pyenv/bin/pyenv global {{ python3_version }}
+  command: ~/.pyenv/bin/pyenv global {{ default_python_version }}
 
 - name: update pyenv shims
   command: ~/.pyenv/bin/pyenv rehash
@@ -13,7 +13,7 @@
 # custom/ruby
 
 - name: update default ruby
-  command: ~/.rbenv/bin/rbenv global {{ ruby_version }}
+  command: ~/.rbenv/bin/rbenv global {{ default_ruby_version }}
 
 - name: update rbenv shims
   command: ~/.rbenv/bin/rbenv rehash

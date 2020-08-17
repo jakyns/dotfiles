@@ -22,8 +22,8 @@
   pip:
     name: "{{ pip_packages }}"
     state: present
-    executable: ~/.pyenv/versions/{{ python3_version }}/bin/pip
-    chdir: ~/.pyenv/versions/{{ python3_version }}
+    executable: ~/.pyenv/versions/{{ default_python_version }}/bin/pip
+    chdir: ~/.pyenv/versions/{{ default_python_version }}
   notify: update pyenv shims
   environment:
     PYTHONPATH:

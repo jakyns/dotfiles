@@ -11,10 +11,11 @@
     dest: ~/.rbenv/plugins/ruby-build
     force: yes
 
-- name: install ruby {{ ruby_version }}
-  command: ~/.rbenv/bin/rbenv install {{ ruby_version }}
+- name: install ruby
+  command: ~/.rbenv/bin/rbenv install {{ item }}
   args:
-    creates: ~/.rbenv/versions/{{ ruby_version }}
+    creates: ~/.rbenv/versions/{{ item }}
+  with_items: "{{ ruby_versions }}"
   notify:
     - update default ruby
 
@@ -23,7 +24,7 @@
     name: "{{ item }}"
     state: present
     user_install: false
-    executable: ~/.rbenv/versions/{{ ruby_version }}/bin/gem
+    executable: ~/.rbenv/versions/{{ default_ruby_version }}/bin/gem
   with_items: "{{ gem_packages }}"
   notify:
     - update rbenv shims

@@ -94,10 +94,10 @@ elm_packages:
 # custom/python
 
 python_versions:
-  - 2.7.13
   - 3.7.3
+  - 3.8.4
 
-python3_version: 3.7.3
+default_python_version: 3.7.3
 
 pip_packages:
   - pynvim
@@ -108,7 +108,10 @@ pip_packages:
 
 # custom/ruby
 
-ruby_version: 2.7.0
+ruby_versions:
+  - 2.7.0
+
+default_ruby_version: 2.7.0
 
 gem_packages:
   - neovim
