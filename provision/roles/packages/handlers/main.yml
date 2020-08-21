@@ -1,7 +1,4 @@
 ---
-- name: upgrade homebrew packages
-  homebrew: upgrade_all=yes
-
 # custom/python
 
 - name: update default python

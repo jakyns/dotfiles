@@ -1,8 +1,9 @@
 ---
 - name: update homebrew
   homebrew: update_homebrew=yes
-  notify:
-    - upgrade homebrew packages
+
+- name: upgrade homebrew packages
+  homebrew: upgrade_all=yes
 
 - name: install homebrew packages
   homebrew: name={{ brew_packages }} state=present
