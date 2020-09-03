@@ -48,6 +48,11 @@ eval "$(rbenv init -)"
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
 
+# node
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 # kubectl_aliases
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }

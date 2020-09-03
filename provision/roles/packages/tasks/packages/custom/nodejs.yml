@@ -11,3 +11,9 @@
     state: present
     global: true
   with_items: "{{ yarn_packages }}"
+
+- name: install nvm
+  git:
+    repo: https://github.com/nvm-sh/nvm.git
+    dest: ~/.nvm
+    force: yes
