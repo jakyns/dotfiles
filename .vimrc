@@ -20,6 +20,8 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'python/black'
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
 " Go
 Plugin 'fatih/vim-go'
 " Elixir
