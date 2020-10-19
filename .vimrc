@@ -19,7 +19,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 " Python
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'python/black'
+Plugin 'psf/black'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 " Go
