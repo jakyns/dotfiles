@@ -119,20 +119,11 @@ gem_packages:
   - rails
   - pry
 
-# custom/go
-
-# custom/elixir
-
 # custom/java
 
 java_packages:
   - homebrew/cask-versions/adoptopenjdk8
   - java
-
-# custom/scala
-
-scala_packages:
-  - sbt
 
 # custom/kubernetes
 

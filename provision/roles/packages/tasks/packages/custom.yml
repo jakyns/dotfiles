@@ -7,6 +7,5 @@
 - include: "custom/ruby.yml"
 - include: "custom/elixir.yml"
 - include: "custom/java.yml"
-- include: "custom/scala.yml"
 - include: "custom/kubernetes.yml"
 - include: "custom/spark.yml"

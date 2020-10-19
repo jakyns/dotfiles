@@ -1,6 +1,0 @@
----
-- name: install scala
-  homebrew: name=scala state=present
-
-- name: install scala packages
-  homebrew: name={{ scala_packages }} state=present
