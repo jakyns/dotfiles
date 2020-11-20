@@ -4,7 +4,7 @@ brew_taps:
   - homebrew/core
   - homebrew/cask-fonts
   - datawire/blackbird
-  # - heroku/brew
+  - heroku/brew
 
 brew_packages:
   - autojump
@@ -14,7 +14,7 @@ brew_packages:
   - fswatch
   - fzf
   - gpg
-  # - heroku
+  - heroku
   - htop
   - hyperkit
   - libxml2
@@ -30,28 +30,28 @@ cask_packages:
   - alacritty
   - alfred
   - appcleaner
-  - brave-browser
+  # - brave-browser
   - dash
   - discord
   - docker
   - drawio
   - figma
   - firefox
-  - font-jetbrains-mono
-  - google-backup-and-sync
-  - google-chrome
-  - google-cloud-sdk
+  # - font-jetbrains-mono
+  # - google-backup-and-sync
+  # - google-chrome
+  # - google-cloud-sdk
   - iterm2
   - ngrok
   - numi
-  - oracle-jdk
+  # - oracle-jdk
   - postico
   - postman
-  - sequel-pro
+  # - sequel-pro
   - slack
   - spotify
   - telegram
-  - visual-studio-code
+  # - visual-studio-code
   - whatsapp
 
 mas_packages:
