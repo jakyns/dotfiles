@@ -84,9 +84,10 @@ elm_packages:
 # custom/python
 
 python_versions:
+  - 3.8.4
   - 3.9.0
 
-default_python_version: 3.9.0
+default_python_version: 3.8.4
 
 pip_packages:
   - pynvim
