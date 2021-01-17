@@ -52,6 +52,7 @@ set cul                             " Highlight current line for active window
 set autoread                        " Check one time after 4s of inactivity in normal mode
 set timeoutlen=1000
 set ttimeoutlen=0
+set tags=./tags;,tags;
 au CursorHold * checktime
 
 " Indentation

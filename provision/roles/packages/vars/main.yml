@@ -9,6 +9,7 @@ brew_taps:
 brew_packages:
   - autojump
   - awscli
+  - ctags
   - exercism
   - fish
   - fswatch
