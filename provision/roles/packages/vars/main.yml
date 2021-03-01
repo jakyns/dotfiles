@@ -31,28 +31,28 @@ cask_packages:
   - alacritty
   - alfred
   - appcleaner
-  # - brave-browser
+  - brave-browser
   - dash
   - discord
   - docker
   - drawio
   - figma
   - firefox
-  # - font-jetbrains-mono
-  # - google-backup-and-sync
-  # - google-chrome
-  # - google-cloud-sdk
+  - font-jetbrains-mono
+  - google-backup-and-sync
+  - google-chrome
+  - google-cloud-sdk
   - iterm2
   - ngrok
   - numi
-  # - oracle-jdk
+  - oracle-jdk
   - postico
   - postman
-  # - sequel-pro
+  - sequel-pro
   - slack
   - spotify
   - telegram
-  # - visual-studio-code
+  - visual-studio-code
   - whatsapp
 
 mas_packages:
@@ -86,7 +86,7 @@ elm_packages:
 
 python_versions:
   - 3.8.4
-  - 3.9.0
+  - 3.9.1
 
 default_python_version: 3.8.4
 
@@ -100,9 +100,9 @@ pip_packages:
 # custom/ruby
 
 ruby_versions:
-  - 2.7.0
+  - 2.7.2
 
-default_ruby_version: 2.7.0
+default_ruby_version: 2.7.2
 
 gem_packages:
   - neovim
