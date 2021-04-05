@@ -102,7 +102,7 @@ cursor:
 live_config_reload: true
 
 shell:
-  program: /usr/local/bin/zsh
+  program: /bin/zsh
   args:
     - --login
 

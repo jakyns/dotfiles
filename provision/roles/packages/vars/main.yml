@@ -17,8 +17,6 @@ brew_packages:
   - gpg
   - heroku
   - htop
-  - hyperkit
-  - libxml2
   - mas
   - minikube
   - neovim
@@ -63,7 +61,6 @@ mas_packages:
 # custom/zsh
 
 zsh_packages:
-  - zsh
   - zsh-autosuggestions
   - zsh-syntax-highlighting
 
