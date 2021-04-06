@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -103,7 +103,7 @@ autocmd BufWritePre *.py execute ':Black'
 let g:ruby_host_prog = '~/.rbenv/shims/ruby'
 
 " Node.js
-let g:node_host_prog = '/usr/local/bin/neovim-node-host'
+let g:node_host_prog = '/opt/homebrew/bin/neovim-node-host'
 
 " Go
 let g:go_fmt_command = "goimports"

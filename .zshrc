@@ -1,3 +1,6 @@
+# brew
+export PATH=/opt/homebrew/bin:$PATH
+
 # zsh
 export ZSH=~/.oh-my-zsh
 
@@ -7,8 +10,9 @@ ZSH_DISABLE_COMPFIX=true
 plugins=(git rails django)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
 
 # os
 export LC_ALL=en_US.utf-8
@@ -17,7 +21,7 @@ export LANG=en_US.utf-8
 # default editor
 alias vi=nvim
 alias vim=nvim
-export EDITOR=/usr/local/bin/nvim
+export EDITOR=/opt/homebrew/bin/nvim
 
 # enable tmux color scheme
 export TERM=screen-256color
@@ -26,7 +30,7 @@ export TERM=screen-256color
 export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 
 # autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # python
 alias python=python3

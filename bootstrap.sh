@@ -20,10 +20,6 @@ echo_error() {
     echo -e "\033[0;31m!\033[0;0m $1"
 }
  
-setenv() {
-    export PATH=/usr/local/bin:$PATH
-}
-
 xcode_setup() {
     echo_wait 'Determining Xcode status. You may need to enter root password...'
     if ! xcode-select --install 2>/dev/null; then
@@ -32,13 +28,33 @@ xcode_setup() {
     fi
 }
 
+rosetta_setup() {
+    if [[ ! -f "/Library/Apple/System/Library/LaunchDaemons/com.apple.oahd.plist" ]]; then
+        echo_wait 'Apple Silicon needs to install rosetta 2 first, pleas wait..'
+        /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
+        if [[ $? -eq 0 ]]; then
+            echo_ok 'Rosetta has been successfully installed.'
+        else
+            echo_error 'Rosetta installation failed!'
+            exitcode=1
+        fi
+    else
+        echo_ok 'Rosetta is already installed.'
+    fi
+}
+
 brew_setup() {
     if hash brew 2>/dev/null; then
         echo_ok 'Homebrew is already installed.'
     else
         echo_wait 'Homebrew is not installed. Installing...'
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
+}
+
+setenv() {
+    export PATH=/opt/homebrew/bin:$PATH
 }
 
 ansible_bootstrap() {
@@ -84,9 +100,10 @@ cleanup() {
 }
 
 bootstrap_macos() {
-    setenv
     xcode_setup
+    rosetta_setup
     brew_setup
+    setenv
     ansible_bootstrap
     ansible_run
     cask_update
