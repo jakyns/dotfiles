@@ -64,7 +64,7 @@ cask_update() {
 
     while read -ra cask_info; do
         outdated_casks+=(${cask_info[0]})
-    done <<< "$(brew cask outdated --quiet)"
+    done <<< "$(brew outdated --cask --quiet)"
 
     echo -ne "\r\n"
     echo_clear
@@ -73,7 +73,7 @@ cask_update() {
         echo_ok 'Casks are up-to-date.'
     else
         echo_wait "Updating casks: \033[1;30m${outdated_casks[*]}"
-        brew cask install --force "${outdated_casks[@]}"
+        brew install --cask --force "${outdated_casks[@]}"
     fi
 }
 

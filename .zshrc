@@ -25,9 +25,6 @@ export TERM=screen-256color
 # fzf
 export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 
-# sublime text
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
