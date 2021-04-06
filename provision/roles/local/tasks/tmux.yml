@@ -1,6 +1,10 @@
 ---
 - name: install tmux
-  homebrew: name=tmux state=present
+  homebrew:
+    name: tmux
+    state: present
 
 - name: install tmux-MacOSX-pasteboard
-  homebrew: name=reattach-to-user-namespace state=present
+  homebrew:
+    name: reattach-to-user-namespace
+    state: present

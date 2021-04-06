@@ -1,3 +1,5 @@
 ---
 - name: install elixir
-  homebrew: name=elixir state=present
+  homebrew:
+    name: elixir
+    state: present

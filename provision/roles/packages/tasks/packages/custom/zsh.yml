@@ -1,6 +1,8 @@
 ---
 - name: install zsh packages
-  homebrew: name={{ zsh_packages }} state=present
+  homebrew:
+    name: "{{ zsh_packages }}"
+    state: present
 
 - name: cloning oh-my-zsh
   git:

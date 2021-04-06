@@ -1,3 +1,5 @@
 ---
 - name: install kubernetes packages
-  homebrew: name={{ kubernetes_packages }} state=present
+  homebrew:
+    name: "{{ kubernetes_packages }}"
+    state: present

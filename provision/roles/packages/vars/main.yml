@@ -71,21 +71,12 @@ yarn_packages:
   - pm2
   - dockly
 
-# custom/elm
-
-elm_packages:
-  - elm-test
-  - elm-oracle
-  - elm-format
-  - create-elm-app
-
 # custom/python
 
 python_versions:
-  - 3.8.4
   - 3.9.1
 
-default_python_version: 3.8.4
+default_python_version: 3.9.1
 
 pip_packages:
   - pynvim

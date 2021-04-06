@@ -1,9 +1,13 @@
 ---
 - name: install node
-  homebrew: name=node state=present
+  homebrew:
+    name: node
+    state: present
 
 - name: install yarn
-  homebrew: name=yarn state=present
+  homebrew:
+    name: yarn
+    state: present
 
 - name: install yarn packages
   yarn:
