@@ -38,6 +38,7 @@ cask_packages:
   - google-backup-and-sync
   - google-chrome
   - iterm2
+  - messenger
   - numi
   - oracle-jdk
   - postman
