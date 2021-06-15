@@ -32,6 +32,9 @@ export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 # autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
+# asdf
+. $HOME/.asdf/asdf.sh
+
 # python
 alias python=python3
 alias pip=pip3

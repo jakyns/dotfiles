@@ -1,5 +1,6 @@
 ---
 - include: "custom/zsh.yml"
+- include: "custom/asdf.yml"
 - include: "custom/nodejs.yml"
 - include: "custom/elixir.yml"
 - include: "custom/go.yml"
