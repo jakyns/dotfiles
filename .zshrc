@@ -39,11 +39,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 alias python=python3
 alias pip=pip3
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # pipenv
 eval "$(pipenv --completion)"
 

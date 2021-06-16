@@ -2,10 +2,10 @@
 # custom/python
 
 - name: update default python
-  command: ~/.pyenv/bin/pyenv global {{ default_python_version }}
+  command: ~/.asdf/bin/asdf global python {{ default_python_version }}
 
-- name: update pyenv shims
-  command: ~/.pyenv/bin/pyenv rehash
+- name: update python shims
+  command: ~/.asdf/bin/asdf reshim python
 
 # custom/ruby
 
