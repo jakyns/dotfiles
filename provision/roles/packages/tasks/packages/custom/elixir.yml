@@ -1,5 +1,18 @@
 ---
+- name: install erlang plugin for asdf
+  command: ~/.asdf/bin/asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
+  ignore_errors: true
+
+- name: install elixir plugin for asdf
+  command: ~/.asdf/bin/asdf plugin add elixir
+  ignore_errors: true
+
+- name: install erlang
+  command: arch -arm64 ~/.asdf/bin/asdf install erlang {{ item }}
+  with_items: "{{ erlang_versions }}"
+  notify: update default erlang
+
 - name: install elixir
-  homebrew:
-    name: elixir
-    state: present
+  command: arch -arm64 ~/.asdf/bin/asdf install elixir {{ item }}
+  with_items: "{{ elixir_versions }}"
+  notify: update default elixir

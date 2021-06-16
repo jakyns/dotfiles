@@ -93,6 +93,17 @@ gem_packages:
   - rails
   - pry
 
+# custom/elixir
+
+erlang_versions:
+  - 23.2.3
+
+elixir_versions:
+  - 1.12.1
+
+default_erlang_version: 23.2.3
+default_elixir_version: 1.12.1
+
 # custom/kubernetes
 
 kubernetes_packages:

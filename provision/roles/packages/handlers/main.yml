@@ -14,3 +14,17 @@
 
 - name: update rbenv shims
   command: ~/.rbenv/bin/rbenv rehash
+
+# custom/elixir
+
+- name: update default erlang
+  command: ~/.asdf/bin/asdf global erlang {{ default_erlang_version }}
+
+- name: update erlang shims
+  command: ~/.asdf/bin/asdf reshim erlang
+
+- name: update default elixir
+  command: ~/.asdf/bin/asdf global elixir {{ default_elixir_version }}
+
+- name: update elixir shims
+  command: ~/.asdf/bin/asdf reshim elixir
