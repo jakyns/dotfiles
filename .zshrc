@@ -42,10 +42,6 @@ alias pip=pip3
 # pipenv
 eval "$(pipenv --completion)"
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # golang
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"

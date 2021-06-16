@@ -1,33 +1,21 @@
 ---
-- name: install rbenv
-  git:
-    repo: https://github.com/rbenv/rbenv.git
-    dest: ~/.rbenv
-    force: yes
-
-- name: install ruby-build
-  git:
-    repo: https://github.com/rbenv/ruby-build.git
-    dest: ~/.rbenv/plugins/ruby-build
-    force: yes
+- name: install ruby plugin for asdf
+  command: ~/.asdf/bin/asdf plugin add ruby
+  ignore_errors: true
 
 - name: install ruby
-  command: ~/.rbenv/bin/rbenv install {{ item }}
-  args:
-    creates: ~/.rbenv/versions/{{ item }}
+  command: arch -arm64 ~/.asdf/bin/asdf install ruby {{ item }}
   with_items: "{{ ruby_versions }}"
-  notify:
-    - update default ruby
+  notify: update default ruby
 
 - name: install ruby packages
   gem:
     name: "{{ item }}"
     state: present
     user_install: false
-    executable: ~/.rbenv/versions/{{ default_ruby_version }}/bin/gem
+    executable: arch -arm64 ~/.asdf/shims/gem
   with_items: "{{ gem_packages }}"
-  notify:
-    - update rbenv shims
+  notify: update ruby shims
 
 - name: initial bundle folder
   file:

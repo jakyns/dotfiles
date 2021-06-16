@@ -10,10 +10,10 @@
 # custom/ruby
 
 - name: update default ruby
-  command: ~/.rbenv/bin/rbenv global {{ default_ruby_version }}
+  command: ~/.asdf/bin/asdf global ruby {{ default_ruby_version }}
 
-- name: update rbenv shims
-  command: ~/.rbenv/bin/rbenv rehash
+- name: update ruby shims
+  command: ~/.asdf/bin/asdf reshim ruby
 
 # custom/elixir
 
