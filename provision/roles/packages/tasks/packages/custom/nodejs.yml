@@ -1,13 +1,19 @@
 ---
-- name: install node
-  homebrew:
-    name: node
-    state: present
+- name: install nodejs plugin for asdf
+  command: ~/.asdf/bin/asdf plugin add nodejs
+  ignore_errors: true
+
+- name: install nodejs
+  command: arch -arm64 ~/.asdf/bin/asdf install nodejs {{ item }}
+  with_items: "{{ nodejs_versions }}"
+  notify: update default nodejs
 
 - name: install yarn
   homebrew:
     name: yarn
     state: present
+  notify: update nodejs shims
+
 
 - name: install yarn packages
   yarn:
@@ -15,9 +21,4 @@
     state: present
     global: true
   with_items: "{{ yarn_packages }}"
-
-- name: install nvm
-  git:
-    repo: https://github.com/nvm-sh/nvm.git
-    dest: ~/.nvm
-    force: yes
+  notify: update nodejs shims

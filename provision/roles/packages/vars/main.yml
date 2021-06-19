@@ -59,7 +59,12 @@ zsh_packages:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
 
-# custom/node
+# custom/nodejs
+
+nodejs_versions:
+  - 14.17.1
+
+default_nodejs_version: 14.17.1
 
 yarn_packages:
   - neovim
