@@ -1,16 +1,38 @@
 ---
+# custom/nodejs
+
+- name: update default nodejs
+  command: ~/.asdf/bin/asdf global python {{ default_python_version }}
+
+- name: update nodejs shims
+  command: ~/.asdf/bin/asdf reshim nodejs
+
 # custom/python
 
 - name: update default python
-  command: ~/.pyenv/bin/pyenv global {{ default_python_version }}
+  command: ~/.asdf/bin/asdf global python {{ default_python_version }}
 
-- name: update pyenv shims
-  command: ~/.pyenv/bin/pyenv rehash
+- name: update python shims
+  command: ~/.asdf/bin/asdf reshim python
 
 # custom/ruby
 
 - name: update default ruby
-  command: ~/.rbenv/bin/rbenv global {{ default_ruby_version }}
+  command: ~/.asdf/bin/asdf global ruby {{ default_ruby_version }}
 
-- name: update rbenv shims
-  command: ~/.rbenv/bin/rbenv rehash
+- name: update ruby shims
+  command: ~/.asdf/bin/asdf reshim ruby
+
+# custom/elixir
+
+- name: update default erlang
+  command: ~/.asdf/bin/asdf global erlang {{ default_erlang_version }}
+
+- name: update erlang shims
+  command: ~/.asdf/bin/asdf reshim erlang
+
+- name: update default elixir
+  command: ~/.asdf/bin/asdf global elixir {{ default_elixir_version }}
+
+- name: update elixir shims
+  command: ~/.asdf/bin/asdf reshim elixir

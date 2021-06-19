@@ -1,29 +1,20 @@
 ---
-- name: install pyenv
-  git:
-    repo: https://github.com/yyuu/pyenv.git
-    dest: ~/.pyenv
-    force: yes
-
-- name: install pyenv-pip-rehash
-  git:
-    repo: https://github.com/yyuu/pyenv-pip-rehash.git
-    dest: ~/.pyenv/plugins/pyenv-pip-rehash
-    force: yes
+- name: install python plugin for asdf
+  command: ~/.asdf/bin/asdf plugin add python
+  ignore_errors: true
 
 - name: install python
-  command: ~/.pyenv/bin/pyenv install {{ item }}
-  args:
-    creates: ~/.pyenv/versions/{{ item }}
+  command: arch -arm64 ~/.asdf/bin/asdf install python {{ item }}
   with_items: "{{ python_versions }}"
-  notify: update default python
+  notify:
+    - update default python
+    - update python shims
 
 - name: install python packages
   pip:
-    name: "{{ pip_packages }}"
+    name: "{{ item }}"
     state: present
-    executable: ~/.pyenv/versions/{{ default_python_version }}/bin/pip
-    chdir: ~/.pyenv/versions/{{ default_python_version }}
-  notify: update pyenv shims
-  environment:
-    PYTHONPATH:
+    executable: ~/.asdf/installs/python/{{ default_python_version }}/bin/pip
+    chdir: ~/.asdf/installs/python/{{ default_python_version }}/bin/python
+  with_items: "{{ pip_packages }}"
+  notify: update python shims

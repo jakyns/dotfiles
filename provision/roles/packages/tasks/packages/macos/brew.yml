@@ -4,8 +4,7 @@
     update_homebrew: yes
 
 - name: upgrade homebrew packages
-  homebrew:
-    upgrade_all: yes
+  command: arch -arm64 brew upgrade
 
 - name: install homebrew packages
   homebrew:

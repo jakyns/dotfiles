@@ -59,7 +59,12 @@ zsh_packages:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
 
-# custom/node
+# custom/nodejs
+
+nodejs_versions:
+  - 14.17.1
+
+default_nodejs_version: 14.17.1
 
 yarn_packages:
   - neovim
@@ -92,6 +97,17 @@ gem_packages:
   - bundler
   - rails
   - pry
+
+# custom/elixir
+
+erlang_versions:
+  - 23.2.3
+
+elixir_versions:
+  - 1.12.1
+
+default_erlang_version: 23.2.3
+default_elixir_version: 1.12.1
 
 # custom/kubernetes
 
