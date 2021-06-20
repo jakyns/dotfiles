@@ -74,9 +74,9 @@ yarn_packages:
 # custom/python
 
 python_versions:
-  - 3.9.1
+  - 3.9.5
 
-default_python_version: 3.9.1
+default_python_version: 3.9.5
 
 pip_packages:
   - pynvim
