@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 ZSH_DISABLE_COMPFIX=true
 
-plugins=(git rails django)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
