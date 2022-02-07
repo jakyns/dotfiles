@@ -13,3 +13,5 @@
   commend = commit --amend --no-edit
   phlease = push origin HEAD --force-with-lease
   fetchall =  fetch --all --tags --prune
+[init]
+	defaultBranch = main
