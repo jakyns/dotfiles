@@ -1,5 +1,0 @@
----
-- name: install java packages
-  homebrew_cask:
-    name: "{{ java_packages }}"
-    state: present
