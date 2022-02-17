@@ -74,9 +74,9 @@ yarn_packages:
 # custom/python
 
 python_versions:
-  - 3.9.5
+  - 3.10.2
 
-default_python_version: 3.9.5
+default_python_version: 3.10.2
 
 pip_packages:
   - pip
@@ -88,9 +88,9 @@ pip_packages:
 # custom/ruby
 
 ruby_versions:
-  - 2.7.2
+  - 3.0.1
 
-default_ruby_version: 2.7.2
+default_ruby_version: 3.0.1
 
 gem_packages:
   - neovim
@@ -101,13 +101,13 @@ gem_packages:
 # custom/elixir
 
 erlang_versions:
-  - 23.2.3
+  - 24.0.2
 
 elixir_versions:
-  - 1.12.1
+  - 1.13.2
 
-default_erlang_version: 23.2.3
-default_elixir_version: 1.12.1
+default_erlang_version: 24.0.2
+default_elixir_version: 1.13.2
 
 # custom/kubernetes
 
