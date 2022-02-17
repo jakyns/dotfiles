@@ -79,11 +79,11 @@ python_versions:
 default_python_version: 3.9.5
 
 pip_packages:
-  - pynvim
   - pip
   - virtualenv
   - pipenv
-  - black
+  - autopep8
+  - pynvim
 
 # custom/ruby
 
