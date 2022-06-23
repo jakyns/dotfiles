@@ -28,22 +28,6 @@ xcode_setup() {
     fi
 }
 
-rosetta_setup() {
-    if [[ ! -f "/Library/Apple/System/Library/LaunchDaemons/com.apple.oahd.plist" ]]; then
-        echo_wait 'Apple Silicon needs to install rosetta 2 first, pleas wait..'
-        /usr/sbin/softwareupdate --install-rosetta --agree-to-license
-
-        if [[ $? -eq 0 ]]; then
-            echo_ok 'Rosetta has been successfully installed.'
-        else
-            echo_error 'Rosetta installation failed!'
-            exitcode=1
-        fi
-    else
-        echo_ok 'Rosetta is already installed.'
-    fi
-}
-
 brew_setup() {
     if hash brew 2>/dev/null; then
         echo_ok 'Homebrew is already installed.'
@@ -101,7 +85,6 @@ cleanup() {
 
 bootstrap_macos() {
     xcode_setup
-    rosetta_setup
     brew_setup
     setenv
     ansible_bootstrap
