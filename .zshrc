@@ -1,5 +1,6 @@
 # brew
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
 
 # zsh
 export ZSH=~/.oh-my-zsh
