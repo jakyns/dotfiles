@@ -4,7 +4,6 @@ brew_taps:
   - homebrew/core
   - homebrew/cask-fonts
   - datawire/blackbird
-  - heroku/brew
 
 brew_packages:
   - autojump
@@ -15,7 +14,6 @@ brew_packages:
   - fswatch
   - fzf
   - gpg
-  - heroku
   - htop
   - mas
   - minikube
