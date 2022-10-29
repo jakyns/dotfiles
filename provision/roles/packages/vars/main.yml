@@ -99,7 +99,6 @@ gem_packages:
 # custom/elixir
 
 erlang_versions:
-  - 23.3.4
   - 24.0.2
   - 24.1.7
 
