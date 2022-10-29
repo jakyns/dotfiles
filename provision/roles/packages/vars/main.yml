@@ -35,7 +35,7 @@ cask_packages:
   - figma
   - firefox
   - font-jetbrains-mono
-  - google-backup-and-sync
+  - google-drive
   - google-chrome
   - iterm2
   - mockoon
