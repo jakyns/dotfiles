@@ -2,7 +2,7 @@
 # custom/nodejs
 
 - name: update default nodejs
-  command: ~/.asdf/bin/asdf global python {{ default_python_version }}
+  command: ~/.asdf/bin/asdf global nodejs {{ default_nodejs_version }}
 
 - name: update nodejs shims
   command: ~/.asdf/bin/asdf reshim nodejs

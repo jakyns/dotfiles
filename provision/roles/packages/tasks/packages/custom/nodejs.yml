@@ -14,7 +14,6 @@
     state: present
   notify: update nodejs shims
 
-
 - name: install yarn packages
   yarn:
     name: "{{ item }}"
