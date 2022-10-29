@@ -4,7 +4,7 @@
   ignore_errors: true
 
 - name: install ruby
-  command: arch -arm64 ~/.asdf/bin/asdf install ruby {{ item }}
+  command: ~/.asdf/bin/asdf install ruby {{ item }}
   with_items: "{{ ruby_versions }}"
   notify: update default ruby
 
@@ -13,7 +13,7 @@
     name: "{{ item }}"
     state: present
     user_install: false
-    executable: arch -arm64 ~/.asdf/shims/gem
+    executable: ~/.asdf/shims/gem
   with_items: "{{ gem_packages }}"
   notify: update ruby shims
 

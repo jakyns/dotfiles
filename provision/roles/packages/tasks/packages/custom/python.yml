@@ -4,7 +4,7 @@
   ignore_errors: true
 
 - name: install python
-  command: arch -arm64 ~/.asdf/bin/asdf install python {{ item }}
+  command: ~/.asdf/bin/asdf install python {{ item }}
   with_items: "{{ python_versions }}"
   notify:
     - update default python
