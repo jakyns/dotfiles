@@ -60,10 +60,9 @@ zsh_packages:
 # custom/nodejs
 
 nodejs_versions:
-  - 14.19.0
   - 18.9.0
 
-default_nodejs_version: 14.19.0
+default_nodejs_version: 18.9.0
 
 yarn_packages:
   - neovim
