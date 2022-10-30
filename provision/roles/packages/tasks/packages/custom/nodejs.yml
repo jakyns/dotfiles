@@ -8,11 +8,15 @@
   with_items: "{{ nodejs_versions }}"
   notify: update default nodejs
 
+- meta: flush_handlers
+
 - name: install yarn
   homebrew:
     name: yarn
     state: present
   notify: update nodejs shims
+
+- meta: flush_handlers
 
 - name: install yarn packages
   yarn:

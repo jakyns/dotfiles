@@ -10,6 +10,8 @@
     - update default python
     - update python shims
 
+- meta: flush_handlers
+
 - name: install python packages
   pip:
     name: "{{ item }}"
