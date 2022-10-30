@@ -4,6 +4,3 @@
     repo: https://github.com/asdf-vm/asdf.git
     dest: ~/.asdf
     force: yes
-
-- name: source asdf file
-  shell: . ~/.asdf/asdf.sh
