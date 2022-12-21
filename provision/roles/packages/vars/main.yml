@@ -25,6 +25,7 @@ cask_packages:
   - 1password-cli
   - alacritty
   - alfred
+  - arc
   - brave-browser
   - dash
   - discord
