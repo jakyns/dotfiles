@@ -7,9 +7,7 @@ brew_taps:
 
 brew_packages:
   - autojump
-  - awscli
   - ctags
-  - fish
   - fswatch
   - fzf
   - htop
@@ -38,7 +36,6 @@ cask_packages:
   - iterm2
   - mockoon
   - numi
-  - oracle-jdk
   - postman
   - slack
   - spotify
