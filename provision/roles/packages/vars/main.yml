@@ -47,9 +47,9 @@ cask_packages:
   - whatsapp
 
 mas_packages:
-  - 1091189122  # Bear
-  - 441258766   # Magnet
-  - 539883307   # LINE
+  - 1091189122 # Bear
+  - 441258766 # Magnet
+  - 539883307 # LINE
 
 # custom/zsh
 
@@ -60,9 +60,9 @@ zsh_packages:
 # custom/nodejs
 
 nodejs_versions:
-  - 18.9.0
+  - lts-hydrogen
 
-default_nodejs_version: 18.9.0
+default_nodejs_version: lts-hydrogen
 
 yarn_packages:
   - neovim
@@ -72,9 +72,9 @@ yarn_packages:
 # custom/python
 
 python_versions:
-  - 3.11.0
+  - 3.11.1
 
-default_python_version: 3.11.0
+default_python_version: 3.11.1
 
 pip_packages:
   - pip
@@ -86,9 +86,9 @@ pip_packages:
 # custom/ruby
 
 ruby_versions:
-  - 3.1.1
+  - 3.1.3
 
-default_ruby_version: 3.1.1
+default_ruby_version: 3.1.3
 
 gem_packages:
   - neovim
@@ -99,14 +99,13 @@ gem_packages:
 # custom/elixir
 
 erlang_versions:
-  - 24.0.2
-  - 24.1.7
+  - 25.2
 
 elixir_versions:
-  - 1.13.2
+  - 1.14.2
 
-default_erlang_version: 24.1.7
-default_elixir_version: 1.13.2
+default_erlang_version: 25.2
+default_elixir_version: 1.14.2
 
 # custom/kubernetes
 
