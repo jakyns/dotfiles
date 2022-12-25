@@ -7,3 +7,5 @@
 
 - name: Source asdf upon zsh launch
   shell: source ~/.asdf/asdf.sh
+  args:
+    executable: /bin/zsh
