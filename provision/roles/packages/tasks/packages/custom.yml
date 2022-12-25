@@ -7,4 +7,3 @@
 - include: "custom/python.yml"
 - include: "custom/ruby.yml"
 - include: "custom/kubernetes.yml"
-- include: "custom/spark.yml"

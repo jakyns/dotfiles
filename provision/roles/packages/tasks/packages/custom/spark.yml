@@ -1,5 +1,0 @@
----
-- name: install spark
-  homebrew:
-    name: apache-spark
-    state: present
