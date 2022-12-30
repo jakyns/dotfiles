@@ -35,6 +35,7 @@ cask_packages:
   - google-chrome
   - iterm2
   - mockoon
+  - ngrok
   - numi
   - postman
   - slack
