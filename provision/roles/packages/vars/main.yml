@@ -34,6 +34,7 @@ cask_packages:
   - google-drive
   - google-chrome
   - iterm2
+  - messenger
   - mockoon
   - ngrok
   - numi

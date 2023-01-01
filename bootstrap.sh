@@ -19,7 +19,7 @@ echo_wait() {
 echo_error() {
     echo -e "\033[0;31m!\033[0;0m $1"
 }
- 
+
 xcode_setup() {
     echo_wait 'Determining Xcode status. You may need to enter root password...'
     if ! xcode-select --install 2>/dev/null; then
