@@ -48,6 +48,10 @@ export PATH="$PATH:$GOPATH/bin"
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
 
+# gcloud
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+
 # watch
 watch () {
   while true
