@@ -40,6 +40,8 @@ export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 alias python=python3
 alias pip=pip3
 
+export PIPENV_VENV_IN_PROJECT=1
+
 # golang
 export GOPATH="$HOME/Sites/go"
 export PATH="$PATH:$GOPATH/bin"
