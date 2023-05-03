@@ -105,7 +105,6 @@ shell:
     - --login
 
 enable_experimental_conpty_backend: false
-alt_send_esc: true
 
 debug:
   render_timer: false
