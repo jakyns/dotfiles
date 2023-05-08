@@ -4,12 +4,14 @@ brew_taps:
   - homebrew/core
   - homebrew/cask-fonts
   - datawire/blackbird
+  - hashicorp/tap
 
 brew_packages:
   - autojump
   - ctags
   - fswatch
   - fzf
+  - hashicorp/tap/terraform
   - htop
   - mas
   - minikube
