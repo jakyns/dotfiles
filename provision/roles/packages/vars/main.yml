@@ -33,6 +33,7 @@ cask_packages:
   - figma
   - firefox
   - font-jetbrains-mono
+  - font-fira-code
   - google-drive
   - google-chrome
   - iterm2
