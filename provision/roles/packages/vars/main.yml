@@ -46,7 +46,6 @@ cask_packages:
   - spotify
   - telegram
   - visual-studio-code
-  - whatsapp
 
 mas_packages:
   - 1091189122 # Bear
