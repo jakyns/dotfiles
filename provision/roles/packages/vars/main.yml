@@ -17,6 +17,7 @@ brew_packages:
   - minikube
   - neovim
   - postgresql
+  - terragrunt
   - the_silver_searcher
   - tree
 
