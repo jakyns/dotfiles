@@ -38,6 +38,7 @@ cask_packages:
   - google-drive
   - google-chrome
   - iterm2
+  - keybase
   - messenger
   - mockoon
   - ngrok
