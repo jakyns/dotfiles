@@ -28,13 +28,13 @@ cask_packages:
   - alfred
   - arc
   - brave-browser
+  - canva
   - dash
   - discord
   - drawio
   - figma
   - firefox
   - font-jetbrains-mono
-  - font-fira-code
   - font-monaspace
   - google-drive
   - google-chrome
