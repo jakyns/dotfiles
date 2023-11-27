@@ -64,9 +64,9 @@ zsh_packages:
 # custom/nodejs
 
 nodejs_versions:
-  - lts-hydrogen
+  - 20.10.0
 
-default_nodejs_version: lts-hydrogen
+default_nodejs_version: 20.10.0
 
 yarn_packages:
   - neovim
@@ -77,6 +77,7 @@ yarn_packages:
 
 python_versions:
   - 3.11.1
+  - 3.11.5
 
 default_python_version: 3.11.1
 
@@ -103,13 +104,13 @@ gem_packages:
 # custom/elixir
 
 erlang_versions:
-  - 25.2
+  - 26.1.2
 
 elixir_versions:
-  - 1.14.2
+  - 1.15.7
 
-default_erlang_version: 25.2
-default_elixir_version: 1.14.2
+default_erlang_version: 26.1.2
+default_elixir_version: 1.15.7
 
 # custom/kubernetes
 
