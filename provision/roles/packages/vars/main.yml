@@ -43,6 +43,7 @@ cask_packages:
   - messenger
   - mockoon
   - ngrok
+  - notion
   - numi
   - postman
   - slack
