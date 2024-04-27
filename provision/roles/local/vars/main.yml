@@ -22,8 +22,8 @@ links:
   - source: ~/dotfiles/.guard.rb
     dest: ~/.guard.rb
 
-  - source: ~/dotfiles/.alacritty.yml
-    dest: ~/.alacritty.yml
+  - source: ~/dotfiles/.alacritty.toml
+    dest: ~/.alacritty.toml
 
   - source: ~/dotfiles/.kubectl_aliases
     dest: ~/.kubectl_aliases
