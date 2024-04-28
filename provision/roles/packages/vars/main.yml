@@ -117,5 +117,5 @@ default_elixir_version: 1.15.7
 
 kubernetes_packages:
   - kubernetes-cli
-  - kubernetes-helm
+  - helm
   - kubectx
