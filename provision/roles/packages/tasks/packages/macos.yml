@@ -1,4 +1,4 @@
 ---
-- include: "macos/cask.yml"
-- include: "macos/brew.yml"
-- include: "macos/mas.yml"
+- import_tasks: "macos/cask.yml"
+- import_tasks: "macos/brew.yml"
+- import_tasks: "macos/mas.yml"

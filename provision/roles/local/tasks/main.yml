@@ -1,4 +1,4 @@
 ---
-- include: vim.yml
-- include: tmux.yml
-- include: dotfiles.yml
+- import_tasks: vim.yml
+- import_tasks: tmux.yml
+- import_tasks: dotfiles.yml
