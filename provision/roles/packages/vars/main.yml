@@ -29,7 +29,6 @@ cask_packages:
   - arc
   - brave-browser
   - canva
-  - dash
   - discord
   - drawio
   - figma
@@ -52,7 +51,6 @@ cask_packages:
   - visual-studio-code
 
 mas_packages:
-  - 1091189122 # Bear
   - 441258766 # Magnet
   - 539883307 # LINE
 
