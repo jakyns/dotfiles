@@ -83,7 +83,6 @@ pip_packages:
   - pip
   - virtualenv
   - pipenv
-  - autopep8
   - pynvim
   - setuptools
   - wheel
