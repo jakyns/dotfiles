@@ -63,9 +63,9 @@ zsh_packages:
 # custom/nodejs
 
 nodejs_versions:
-  - 20.10.0
+  - 22.9.0
 
-default_nodejs_version: 20.10.0
+default_nodejs_version: 22.9.0
 
 yarn_packages:
   - neovim
@@ -75,10 +75,9 @@ yarn_packages:
 # custom/python
 
 python_versions:
-  - 3.11.1
-  - 3.11.5
+  - 3.12.3
 
-default_python_version: 3.11.1
+default_python_version: 3.12.3
 
 pip_packages:
   - pip
@@ -86,13 +85,15 @@ pip_packages:
   - pipenv
   - autopep8
   - pynvim
+  - setuptools
+  - wheel
 
 # custom/ruby
 
 ruby_versions:
-  - 3.1.3
+  - 3.3.0
 
-default_ruby_version: 3.1.3
+default_ruby_version: 3.3.0
 
 gem_packages:
   - neovim
