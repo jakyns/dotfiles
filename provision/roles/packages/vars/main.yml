@@ -2,7 +2,6 @@
 brew_taps:
   - homebrew/cask
   - homebrew/core
-  - homebrew/cask-fonts
   - datawire/blackbird
   - hashicorp/tap
 
@@ -16,7 +15,6 @@ brew_packages:
   - mas
   - minikube
   - neovim
-  - postgresql
   - terragrunt
   - the_silver_searcher
   - tree
@@ -45,7 +43,6 @@ cask_packages:
   - notion
   - numi
   - postman
-  - slack
   - spotify
   - telegram
   - visual-studio-code
