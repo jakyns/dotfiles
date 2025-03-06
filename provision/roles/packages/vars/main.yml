@@ -1,7 +1,5 @@
 ---
 brew_taps:
-  - homebrew/cask
-  - homebrew/core
   - datawire/blackbird
   - hashicorp/tap
 

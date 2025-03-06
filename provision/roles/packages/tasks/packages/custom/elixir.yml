@@ -10,9 +10,7 @@
 - name: install erlang
   command: asdf install erlang {{ item }}
   with_items: "{{ erlang_versions }}"
-  notify: update default erlang
 
 - name: install elixir
   command: asdf install elixir {{ item }}
   with_items: "{{ elixir_versions }}"
-  notify: update default elixir

@@ -7,7 +7,6 @@
   command: asdf install python {{ item }}
   with_items: "{{ python_versions }}"
   notify:
-    - update default python
     - update python shims
 
 - meta: flush_handlers

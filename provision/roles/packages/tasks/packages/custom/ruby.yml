@@ -6,7 +6,6 @@
 - name: install ruby
   command: asdf install ruby {{ item }}
   with_items: "{{ ruby_versions }}"
-  notify: update default ruby
 
 - meta: flush_handlers
 

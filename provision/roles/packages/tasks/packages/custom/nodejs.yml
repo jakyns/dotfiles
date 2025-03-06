@@ -6,7 +6,6 @@
 - name: install nodejs
   command: asdf install nodejs {{ item }}
   with_items: "{{ nodejs_versions }}"
-  notify: update default nodejs
 
 - meta: flush_handlers
 
