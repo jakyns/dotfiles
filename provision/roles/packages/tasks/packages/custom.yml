@@ -1,6 +1,5 @@
 ---
 - import_tasks: "custom/zsh.yml"
-- import_tasks: "custom/asdf.yml"
 - import_tasks: "custom/nodejs.yml"
 - import_tasks: "custom/elixir.yml"
 - import_tasks: "custom/go.yml"
