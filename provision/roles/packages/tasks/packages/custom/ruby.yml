@@ -1,10 +1,10 @@
 ---
 - name: install ruby plugin for asdf
-  command: ~/.asdf/bin/asdf plugin add ruby
+  command: asdf plugin add ruby
   ignore_errors: true
 
 - name: install ruby
-  command: ~/.asdf/bin/asdf install ruby {{ item }}
+  command: asdf install ruby {{ item }}
   with_items: "{{ ruby_versions }}"
   notify: update default ruby
 

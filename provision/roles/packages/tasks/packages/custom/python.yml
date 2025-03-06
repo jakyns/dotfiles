@@ -1,10 +1,10 @@
 ---
 - name: install python plugin for asdf
-  command: ~/.asdf/bin/asdf plugin add python
+  command: asdf plugin add python
   ignore_errors: true
 
 - name: install python
-  command: ~/.asdf/bin/asdf install python {{ item }}
+  command: asdf install python {{ item }}
   with_items: "{{ python_versions }}"
   notify:
     - update default python

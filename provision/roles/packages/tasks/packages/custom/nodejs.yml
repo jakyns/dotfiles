@@ -1,10 +1,10 @@
 ---
 - name: install nodejs plugin for asdf
-  command: ~/.asdf/bin/asdf plugin add nodejs
+  command: asdf plugin add nodejs
   ignore_errors: true
 
 - name: install nodejs
-  command: ~/.asdf/bin/asdf install nodejs {{ item }}
+  command: asdf install nodejs {{ item }}
   with_items: "{{ nodejs_versions }}"
   notify: update default nodejs
 
