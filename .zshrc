@@ -34,7 +34,7 @@ export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 # asdf
-. $HOME/.asdf/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # python
 alias python=python3
