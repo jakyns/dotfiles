@@ -23,6 +23,7 @@ cask_packages:
   - 1password-cli
   - alacritty
   - alfred
+  - antigravity
   - arc
   - brave-browser
   - canva
