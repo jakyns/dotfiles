@@ -26,6 +26,7 @@ cask_packages:
   - antigravity
   - arc
   - brave-browser
+  - bruno
   - canva
   - discord
   - drawio
@@ -41,7 +42,6 @@ cask_packages:
   - ngrok
   - notion
   - numi
-  - postman
   - spotify
   - telegram
   - visual-studio-code
