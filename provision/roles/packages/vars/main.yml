@@ -9,6 +9,7 @@ brew_packages:
   - ctags
   - fswatch
   - fzf
+  - gh
   - hashicorp/tap/terraform
   - htop
   - mas
