@@ -28,6 +28,7 @@ cask_packages:
   - brave-browser
   - bruno
   - canva
+  - claude-code
   - discord
   - drawio
   - figma
