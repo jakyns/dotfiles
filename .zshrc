@@ -33,8 +33,8 @@ export FZF_DEFAULT_COMMAND='ag --hidden -lg ""'
 # autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# mise
+eval "$(mise activate zsh)"
 
 # python
 alias python=python3
@@ -79,4 +79,3 @@ compinit
 
 # Added by Antigravity
 export PATH="/Users/bank/.antigravity/antigravity/bin:$PATH"
-

@@ -1,0 +1,7 @@
+[tools]
+node = "21.6.1"
+python = "3.12.3"
+ruby = "3.3.0"
+erlang = "27.2"
+elixir = "1.17.3-otp-27"
+
