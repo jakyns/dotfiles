@@ -1,21 +1,12 @@
 ---
-- name: install python plugin for asdf
-  command: asdf plugin add python
-  ignore_errors: true
-
 - name: install python
-  command: asdf install python {{ item }}
+  command: mise install python@{{ item }}
   with_items: "{{ python_versions }}"
   notify:
-    - update python shims
+    - update shims
 
 - meta: flush_handlers
 
 - name: install python packages
-  pip:
-    name: "{{ item }}"
-    state: present
-    executable: ~/.asdf/installs/python/{{ default_python_version }}/bin/pip
-    chdir: ~/.asdf/installs/python/{{ default_python_version }}/bin/python
-  with_items: "{{ pip_packages }}"
-  notify: update python shims
+  command: ~/.local/share/mise/installs/python/{{ default_python_version }}/bin/pip install {{ pip_packages | join(' ') }}
+  notify: update shims

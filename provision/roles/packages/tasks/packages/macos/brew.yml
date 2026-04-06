@@ -4,7 +4,10 @@
     update_homebrew: yes
 
 - name: upgrade homebrew packages
-  command: brew upgrade
+  shell: brew upgrade
+  register: brew_upgrade_result
+  changed_when: brew_upgrade_result.stdout != ""
+  failed_when: false
 
 - name: install homebrew packages
   homebrew:

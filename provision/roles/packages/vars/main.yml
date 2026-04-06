@@ -4,7 +4,6 @@ brew_taps:
   - hashicorp/tap
 
 brew_packages:
-  - asdf
   - autojump
   - ctags
   - fswatch
@@ -14,6 +13,7 @@ brew_packages:
   - htop
   - mas
   - minikube
+  - mise
   - neovim
   - terragrunt
   - the_silver_searcher

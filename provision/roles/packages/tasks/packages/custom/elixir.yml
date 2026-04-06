@@ -1,16 +1,9 @@
 ---
-- name: install erlang plugin for asdf
-  command: asdf plugin add erlang
-  ignore_errors: true
-
-- name: install elixir plugin for asdf
-  command: asdf plugin add elixir
-  ignore_errors: true
-
 - name: install erlang
-  command: asdf install erlang {{ item }}
+  command: mise install erlang@{{ item }}
   with_items: "{{ erlang_versions }}"
 
 - name: install elixir
-  command: asdf install elixir {{ item }}
+  command: mise install elixir@{{ item }}
   with_items: "{{ elixir_versions }}"
+  notify: update shims

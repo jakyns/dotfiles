@@ -1,10 +1,6 @@
 ---
-- name: install nodejs plugin for asdf
-  command: asdf plugin add nodejs
-  ignore_errors: true
-
 - name: install nodejs
-  command: asdf install nodejs {{ item }}
+  command: mise install node@{{ item }}
   with_items: "{{ nodejs_versions }}"
 
 - meta: flush_handlers
@@ -13,7 +9,7 @@
   homebrew:
     name: yarn
     state: present
-  notify: update nodejs shims
+  notify: update shims
 
 - meta: flush_handlers
 
@@ -23,4 +19,4 @@
     state: present
     global: true
   with_items: "{{ yarn_packages }}"
-  notify: update nodejs shims
+  notify: update shims

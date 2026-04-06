@@ -1,10 +1,6 @@
 ---
-- name: install ruby plugin for asdf
-  command: asdf plugin add ruby
-  ignore_errors: true
-
 - name: install ruby
-  command: asdf install ruby {{ item }}
+  command: mise install ruby@{{ item }}
   with_items: "{{ ruby_versions }}"
 
 - meta: flush_handlers
@@ -14,9 +10,9 @@
     name: "{{ item }}"
     state: present
     user_install: false
-    executable: ~/.asdf/shims/gem
+    executable: ~/.local/share/mise/shims/gem
   with_items: "{{ gem_packages }}"
-  notify: update ruby shims
+  notify: update shims
 
 - name: initial bundle folder
   file:
