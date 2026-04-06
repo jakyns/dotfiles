@@ -5,6 +5,7 @@
 *.swo
 *.log
 
+# asdf
 *.tool-versions
 
 tags
