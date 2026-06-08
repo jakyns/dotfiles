@@ -1,0 +1,11 @@
+font-family = JetBrains Mono
+font-size = 14
+
+background = #191919
+foreground = #eaeaea
+
+cursor-color = #ff2600
+cursor-text = #f1c1c1
+
+window-padding-x = 10
+window-padding-y = 10
