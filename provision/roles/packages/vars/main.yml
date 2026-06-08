@@ -23,7 +23,6 @@ cask_packages:
   - 1password
   - 1password-cli
   - alfred
-  - antigravity
   - arc
   - brave-browser
   - bruno

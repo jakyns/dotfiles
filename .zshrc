@@ -77,5 +77,3 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
-# Added by Antigravity
-export PATH="/Users/bank/.antigravity/antigravity/bin:$PATH"
