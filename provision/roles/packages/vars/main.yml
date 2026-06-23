@@ -18,6 +18,8 @@ brew_packages:
   - terragrunt
   - the_silver_searcher
   - tree
+  # LLM
+  - rtt
 
 cask_packages:
   - 1password
@@ -46,6 +48,8 @@ cask_packages:
   - spotify
   - telegram
   - visual-studio-code
+  # LLM
+  - claude-code
 
 mas_packages:
   - 441258766 # Magnet
