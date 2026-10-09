@@ -12,14 +12,12 @@ brew_packages:
   - hashicorp/tap/terraform
   - htop
   - mas
-  - minikube
   - mise
   - neovim
+  - rtk
   - terragrunt
   - the_silver_searcher
   - tree
-  # LLM
-  - rtt
 
 cask_packages:
   - 1password
@@ -48,8 +46,6 @@ cask_packages:
   - spotify
   - telegram
   - visual-studio-code
-  # LLM
-  - claude-code
 
 mas_packages:
   - 441258766 # Magnet
@@ -112,9 +108,3 @@ elixir_versions:
 default_erlang_version: 27.2
 default_elixir_version: 1.17.3-otp-27
 
-# custom/kubernetes
-
-kubernetes_packages:
-  - kubernetes-cli
-  - helm
-  - kubectx
