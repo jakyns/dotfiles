@@ -23,7 +23,6 @@ cask_packages:
   - 1password
   - 1password-cli
   - alfred
-  - arc
   - brave-browser
   - bruno
   - canva
@@ -46,6 +45,7 @@ cask_packages:
   - spotify
   - tablepro
   - telegram
+  - thebrowsercompany-dia
   - visual-studio-code
 
 mas_packages:
