@@ -4,6 +4,16 @@
     tap: "{{ brew_taps }}"
     state: present
 
+- name: list trusted brew taps
+  command: brew trust --json v1
+  register: brew_trust_result
+  changed_when: false
+  check_mode: false
+
+- name: trust brew taps
+  command: brew trust --tap {{ item }}
+  loop: "{{ brew_taps | difference((brew_trust_result.stdout | from_json).taps) }}"
+
 - name: install cask packages
   homebrew_cask:
     name: "{{ cask_packages }}"
