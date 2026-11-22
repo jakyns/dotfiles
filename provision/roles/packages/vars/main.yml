@@ -1,6 +1,5 @@
 ---
 brew_taps:
-  - datawire/blackbird
   - hashicorp/tap
 
 brew_packages:
