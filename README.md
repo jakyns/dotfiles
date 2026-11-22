@@ -24,7 +24,7 @@ provision/
     ├── packages/                     # Software installation
     │   ├── vars/main.yml             # All package lists (brew, cask, MAS, language packages)
     │   ├── tasks/packages/macos/     # brew.yml, cask.yml, mas.yml
-    │   ├── tasks/packages/custom/    # Per-language: nodejs, python, ruby, elixir, go, kubernetes, zsh
+    │   ├── tasks/packages/custom/    # Per-language: nodejs, python, ruby, elixir, go, zsh
     │   └── handlers/main.yml         # Single `update shims` handler runs `mise reshim`
     └── local/                        # Dotfile symlinks & editor setup
         ├── vars/main.yml             # Symlink definitions

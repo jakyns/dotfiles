@@ -1,7 +1,7 @@
 ---
 brew_taps:
-  - datawire/blackbird
   - hashicorp/tap
+  - supabase/tap
 
 brew_packages:
   - autojump
@@ -15,6 +15,7 @@ brew_packages:
   - mise
   - neovim
   - rtk
+  - supabase/tap/supabase
   - terragrunt
   - the_silver_searcher
   - tree
@@ -23,7 +24,6 @@ cask_packages:
   - 1password
   - 1password-cli
   - alfred
-  - arc
   - brave-browser
   - bruno
   - canva
@@ -46,6 +46,7 @@ cask_packages:
   - spotify
   - tablepro
   - telegram
+  - thebrowsercompany-dia
   - visual-studio-code
 
 mas_packages:

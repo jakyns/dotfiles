@@ -21,6 +21,3 @@ links:
 
   - source: ~/dotfiles/.guard.rb
     dest: ~/.guard.rb
-
-  - source: ~/dotfiles/.kubectl_aliases
-    dest: ~/.kubectl_aliases

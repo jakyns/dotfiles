@@ -49,10 +49,6 @@ export PATH="$PATH:$GOPATH/bin"
 # elixir
 export KERL_CONFIGURE_OPTIONS="--disable-jit"
 
-# kubectl_aliases
-[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
-kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
-
 # gcloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
