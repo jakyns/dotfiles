@@ -4,15 +4,3 @@
     repo: https://github.com/gmarik/Vundle.vim.git
     dest: ~/.vim/bundle/Vundle.vim
     force: yes
-
-- name: initial nvim directory
-  file:
-    path: "~/.config/nvim"
-    state: directory
-
-- name: copy nvim config
-  copy:
-    src: files/nvim/init.vim
-    dest: ~/.config/nvim/
-    force: yes
-

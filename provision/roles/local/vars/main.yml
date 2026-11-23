@@ -10,8 +10,14 @@ links:
   - source: ~/dotfiles/.gitignore_global
     dest: ~/.gitignore_global
 
+  - source: ~/dotfiles/config/ghostty/config
+    dest: ~/.config/ghostty/config
+
   - source: ~/dotfiles/.vimrc
     dest: ~/.vimrc
+
+  - source: ~/dotfiles/config/nvim/init.vim
+    dest: ~/.config/nvim/init.vim
 
   - source: ~/dotfiles/.zshrc
     dest: ~/.zshrc
@@ -21,3 +27,6 @@ links:
 
   - source: ~/dotfiles/.guard.rb
     dest: ~/.guard.rb
+
+  - source: ~/dotfiles/config/bundle/config
+    dest: ~/.bundle/config
