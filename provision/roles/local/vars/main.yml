@@ -25,6 +25,9 @@ links:
   - source: ~/dotfiles/.tmux.conf
     dest: ~/.tmux.conf
 
+  - source: ~/dotfiles/config/mise/config.toml
+    dest: ~/.config/mise/config.toml
+
   - source: ~/dotfiles/.guard.rb
     dest: ~/.guard.rb
 
