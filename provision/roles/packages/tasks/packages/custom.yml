@@ -1,5 +1,6 @@
 ---
 - import_tasks: "custom/zsh.yml"
+- import_tasks: "custom/ghostty.yml"
 - import_tasks: "custom/nodejs.yml"
 - import_tasks: "custom/elixir.yml"
 - import_tasks: "custom/go.yml"

@@ -1,0 +1,5 @@
+---
+- name: install ghostty
+  homebrew_cask:
+    name: ghostty
+    state: present

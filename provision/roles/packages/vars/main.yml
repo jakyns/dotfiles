@@ -32,7 +32,6 @@ cask_packages:
   - firefox
   - font-jetbrains-mono
   - font-monaspace
-  - ghostty
   - google-drive
   - google-chrome
   - iterm2
