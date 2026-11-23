@@ -5,3 +5,4 @@
 - import_tasks: "custom/go.yml"
 - import_tasks: "custom/python.yml"
 - import_tasks: "custom/ruby.yml"
+- import_tasks: "custom/claude.yml"
