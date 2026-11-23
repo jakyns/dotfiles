@@ -15,7 +15,6 @@ brew_packages:
   - mise
   - neovim
   - supabase/tap/supabase
-  - terragrunt
   - the_silver_searcher
   - tree
 
