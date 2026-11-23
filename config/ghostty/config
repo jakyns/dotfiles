@@ -1,11 +1,19 @@
 font-family = JetBrains Mono
 font-size = 14
 
+# unbind left and right for adjustable panel in tmux
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+
+macos-option-as-alt = true
+
+# decoration
 background = #191919
 foreground = #eaeaea
 
 cursor-color = #ff2600
 cursor-text = #f1c1c1
 
+window-theme = dark
 window-padding-x = 10
 window-padding-y = 10

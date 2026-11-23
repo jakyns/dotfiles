@@ -1,0 +1,8 @@
+# vim: filetype=yaml
+---
+BUNDLE_PATH: ".bundle"
+BUNDLE_JOBS: "4"
+BUNDLE_DISABLE_SHARED_GEMS: "1"
+BUNDLE_GEM__TEST: "minitest"
+BUNDLE_GEM__MIT: "false"
+BUNDLE_GEM__COC: "false"

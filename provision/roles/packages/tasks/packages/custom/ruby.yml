@@ -13,14 +13,3 @@
     executable: ~/.local/share/mise/shims/gem
   with_items: "{{ gem_packages }}"
   notify: update shims
-
-- name: initial bundle folder
-  file:
-    path: ~/.bundle
-    state: directory
-
-- name: copy bundle config
-  copy:
-    src: files/ruby/bundle/config
-    dest: ~/.bundle
-    force: yes

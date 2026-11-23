@@ -1,4 +1,10 @@
 ---
+- name: create parent directories for links
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop: "{{ links | map(attribute='dest') | map('dirname') | unique }}"
+
 - name: link files and directories
   file:
     src: "{{ item.source }}"

@@ -17,6 +17,7 @@ cd provision && ansible-playbook local.yml -i hosts -K
 ## Architecture
 
 ```
+config/                               # App config symlinked into ~/ (claude, ghostty, nvim, bundle, mise)
 provision/
 ├── local.yml                         # Main Ansible playbook
 ├── hosts                             # Inventory (localhost)
@@ -24,7 +25,7 @@ provision/
     ├── packages/                     # Software installation
     │   ├── vars/main.yml             # All package lists (brew, cask, MAS, language packages)
     │   ├── tasks/packages/macos/     # brew.yml, cask.yml, mas.yml
-    │   ├── tasks/packages/custom/    # Per-language: nodejs, python, ruby, elixir, go, zsh
+    │   ├── tasks/packages/custom/    # Per-tool: nodejs, python, ruby, elixir, go, zsh, claude, ghostty
     │   └── handlers/main.yml         # Single `update shims` handler runs `mise reshim`
     └── local/                        # Dotfile symlinks & editor setup
         ├── vars/main.yml             # Symlink definitions
@@ -42,14 +43,26 @@ All package lists live in `provision/roles/packages/vars/main.yml`:
 - `cask_packages` — GUI apps
 - `mas_packages` — Mac App Store apps (need app ID)
 - Language packages: `yarn_packages`, `pip_packages`, `gem_packages`
+- `claude_skills` — third-party Claude Code skills, grouped by source repo
 
-Language versions are defined in both `provision/roles/packages/vars/main.yml` and `mise.toml` — keep them in sync.
+Language versions are defined in both `provision/roles/packages/vars/main.yml` and `config/mise/config.toml` — keep them in sync. `config/mise/config.toml` is linked to `~/.config/mise/config.toml` as the global Mise config.
 
 ## Adding Dotfiles
 
-1. Add the file to the repo root
+1. Add the file to the repo root, or to `config/<app>/` if it lives in an app's config directory
 2. Add a symlink entry to `provision/roles/local/vars/main.yml`
 3. The `local/tasks/dotfiles.yml` task will create the symlink on next provision
+
+## Claude Code
+
+The `config/claude/` directory holds the Claude Code config that gets symlinked into `~/.claude`: `CLAUDE.md`, `settings.json`, `statusline.sh`, and skills you wrote yourself in `config/claude/skills/`. `RTK.md` is not in the repo: `custom/claude.yml` runs `rtk init -g` to generate it.
+
+Third-party skills are not stored in the repo. The `custom/claude.yml` task installs each entry in `claude_skills` with `npx skills add` and skips skills that already exist in `~/.claude/skills`.
+
+To add a skill:
+
+- From GitHub: add its name under the source repo in `claude_skills`.
+- Your own: create `config/claude/skills/<name>/SKILL.md` and add a symlink entry for `~/.claude/skills/<name>` in `provision/roles/local/vars/main.yml`. Link each skill directory on its own, not the whole `~/.claude/skills` directory, because the skills CLI also writes there.
 
 ## Version Management
 

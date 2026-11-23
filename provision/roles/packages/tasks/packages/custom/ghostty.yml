@@ -1,11 +1,5 @@
 ---
-- name: make ghostty config dir
-  file:
-    path: ~/.config/ghostty
-    state: directory
-
-- name: copy ghostty config
-  copy:
-    src: files/ghostty/config
-    dest: ~/.config/ghostty
-    force: yes
+- name: install ghostty
+  homebrew_cask:
+    name: ghostty
+    state: present

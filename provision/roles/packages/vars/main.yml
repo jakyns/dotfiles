@@ -14,9 +14,7 @@ brew_packages:
   - mas
   - mise
   - neovim
-  - rtk
   - supabase/tap/supabase
-  - terragrunt
   - the_silver_searcher
   - tree
 
@@ -27,14 +25,12 @@ cask_packages:
   - brave-browser
   - bruno
   - canva
-  - claude-code
   - discord
   - drawio
   - figma
   - firefox
   - font-jetbrains-mono
   - font-monaspace
-  - ghostty
   - google-drive
   - google-chrome
   - iterm2
@@ -110,3 +106,65 @@ elixir_versions:
 default_erlang_version: 27.2
 default_elixir_version: 1.17.3-otp-27
 
+# custom/claude
+
+claude_skills:
+  # "(manual)" marks skills that only run when you type /<name>.
+  # Claude picks the others on its own when a task matches.
+  - source: mattpocock/skills
+    names:
+      # Pick a skill
+      - ask-matt                      # (manual) Suggest which skill or flow fits
+
+      # Plan and stress-test ideas
+      - grilling                      # Question a plan or idea to find weak spots
+      - grill-me                      # (manual) Interview to sharpen a plan or design
+      - grill-with-docs               # (manual) Same interview, writes ADRs and a glossary
+      - loop-me                       # (manual) Interview about specs for workflows to build
+      - to-questionnaire              # (manual) Turn an open decision into a questionnaire for others
+      - wayfinder                     # (manual) Plan multi-session work as decision tickets
+
+      # Spec to implementation (run setup-matt-pocock-skills once first)
+      - setup-matt-pocock-skills      # (manual) Configure issue tracker, triage labels, domain docs
+      - to-spec                       # (manual) Turn the conversation into a spec on the tracker
+      - to-tickets                    # (manual) Split a spec into tracer-bullet tickets with blockers
+      - implement-spec                # (manual) Implement a spec
+      - implement                     # (manual) Implement a spec or set of tickets
+      - triage                        # (manual) Triage issues and external PRs into agent-ready briefs
+
+      # Code design
+      - codebase-design               # Vocabulary for designing deep modules and seams
+      - improve-codebase-architecture # (manual) Find module-deepening opportunities, HTML report
+      - prototype                     # Build a throwaway prototype to answer a design question
+
+      # Write, test, and debug code
+      - tdd                           # Test-first, red-green-refactor
+      - diagnosing-bugs               # Find the cause of hard bugs and slowdowns
+      - code-review                   # Review changes against repo standards and the spec
+
+      # Repo and tool setup
+      - wizard                        # Interactive bash script for steps only a human can do
+
+      # Hand off and look back
+      - handoff                       # (manual) Write a handoff doc for another agent
+      - claude-handoff                # (manual) Hand the conversation to a new background agent
+      - retro                         # (manual) Retrospective on a coding session
+
+      # Learn and research
+      - teach                         # (manual) Teach a concept using this workspace
+      - research                      # Research primary sources, save findings as Markdown
+
+      # Writing
+      - writing-for-agents            # Write skills, AGENTS.md, and CLAUDE.md
+
+      # Other
+      - wait-what                     # (manual) Re-explain a reply that did not make sense
+
+  - source: vercel-labs/skills
+    names:
+      - find-skills                   # Find and install skills
+
+  - source: cursor/plugins
+    names:
+      - technical-writing             # (manual) Technical writing standard for docs
+      - unslop                        # (manual) Remove AI patterns from writing

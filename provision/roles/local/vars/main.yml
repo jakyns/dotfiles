@@ -10,8 +10,14 @@ links:
   - source: ~/dotfiles/.gitignore_global
     dest: ~/.gitignore_global
 
+  - source: ~/dotfiles/config/ghostty/config
+    dest: ~/.config/ghostty/config
+
   - source: ~/dotfiles/.vimrc
     dest: ~/.vimrc
+
+  - source: ~/dotfiles/config/nvim/init.vim
+    dest: ~/.config/nvim/init.vim
 
   - source: ~/dotfiles/.zshrc
     dest: ~/.zshrc
@@ -19,5 +25,23 @@ links:
   - source: ~/dotfiles/.tmux.conf
     dest: ~/.tmux.conf
 
+  - source: ~/dotfiles/config/mise/config.toml
+    dest: ~/.config/mise/config.toml
+
   - source: ~/dotfiles/.guard.rb
     dest: ~/.guard.rb
+
+  - source: ~/dotfiles/config/bundle/config
+    dest: ~/.bundle/config
+
+  - source: ~/dotfiles/config/claude/CLAUDE.md
+    dest: ~/.claude/CLAUDE.md
+
+  - source: ~/dotfiles/config/claude/settings.json
+    dest: ~/.claude/settings.json
+
+  - source: ~/dotfiles/config/claude/statusline.sh
+    dest: ~/.claude/statusline.sh
+
+  - source: ~/dotfiles/config/claude/skills/personalized-coding-style
+    dest: ~/.claude/skills/personalized-coding-style
