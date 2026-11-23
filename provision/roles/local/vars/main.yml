@@ -33,3 +33,15 @@ links:
 
   - source: ~/dotfiles/config/bundle/config
     dest: ~/.bundle/config
+
+  - source: ~/dotfiles/config/claude/CLAUDE.md
+    dest: ~/.claude/CLAUDE.md
+
+  - source: ~/dotfiles/config/claude/settings.json
+    dest: ~/.claude/settings.json
+
+  - source: ~/dotfiles/config/claude/statusline.sh
+    dest: ~/.claude/statusline.sh
+
+  - source: ~/dotfiles/config/claude/skills/personalized-coding-style
+    dest: ~/.claude/skills/personalized-coding-style
